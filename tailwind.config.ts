@@ -24,7 +24,8 @@ const config: Config = {
     },
     fontFamily:{
       logo : ['Grey Qo'],
-      about : ['Lora']
+      about : ['Lora'],
+      service: ['Cormorant']
     }
 
 
