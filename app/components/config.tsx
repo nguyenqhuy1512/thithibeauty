@@ -10,15 +10,14 @@ export const setSlide = {
 };
 
 export const setAbout = {
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     pauseOnHover: true,
-    speed: 2000,
+    speed: 1000,
 };
-
 
 export const setProd = {
     dots: true,
@@ -31,11 +30,11 @@ export const setProd = {
 };
 
 export const setFeed = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    pauseOnHover: true,
+    pauseOnHover: false,
     speed: 5000,
 };

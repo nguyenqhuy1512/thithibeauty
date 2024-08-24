@@ -1,6 +1,3 @@
-'use client';
-import { useEffect, useRef, useState } from "react";
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -15,10 +12,10 @@ import "slick-carousel/slick/slick-theme.css"
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata: Metadata = {
-//   title: "Thi Thi Comestic",
-//   description: "Beauty and Care",
-// };
+export const metadata: Metadata = {
+  title: "Thi Thi Beauty",
+  description: "Beauty and Care",
+};
 
 export default function RootLayout({
   children,
@@ -26,45 +23,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-
-
-  const [isSticky, setIsSticky] = useState(false);
-  const stickyElementRef = useRef<HTMLDivElement>(null);
-  
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-
-
   return (
 
     <html lang='en'>
       <body className='relative'>
-        <div ref={stickyElementRef} className={`z-20 h-auto w-full top-0 ${scrollY > 20 ? `sticky transition ease-in-out duration-300 bg-white` : `absolute`}`}>
+        <div className="z-10 relative">
           <Navbar />
         </div>
-        <div className="relative z-0 h-full w-full" >
+        <div className="z-5">
           {children}
         </div>
-        <div className="relative z-5 mt-10">
+        <div className="z-7">
           <Footer />
         </div>
       </body>
     </html>
-    // <html lang="en" data-theme="winter">
-    //   <body className={inter.className}>{children}</body>
-    // </html>
   );
 }

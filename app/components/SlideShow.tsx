@@ -6,8 +6,6 @@ interface propsHomeSlide {
 
 interface propsAboutSlide {
   img: string,
-  title: string,
-  price: string
 }
 
 interface propsProdSlide {
@@ -30,7 +28,7 @@ interface propsFeedlide {
 export const HomeSlide: React.FC<propsHomeSlide> = ({ img }) => {
   return (
     <>
-      <div className='flex w-screen h-screen relative'>
+      <div className='homeChild relative'>
         <div className='flex w-full h-screen' >
           <img className='w-full h-1/2 md:h-full lg:h-full '
             src={img}
@@ -42,7 +40,18 @@ export const HomeSlide: React.FC<propsHomeSlide> = ({ img }) => {
   )
 }
 
-
+//AboutSlide
+export const AboutSlide: React.FC<propsAboutSlide> = ({ img }) => {
+  return (
+    <>
+      <div className='relative w-full h-full p-4 rounded-2xl bg-white'>
+        <img className='relative w-full h-[560px] border-l-2 border-gray-200 rounded-2xl'
+          src={img}
+          alt="banner" />
+      </div>
+    </>
+  )
+}
 
 
 
@@ -52,8 +61,8 @@ export const HomeSlide: React.FC<propsHomeSlide> = ({ img }) => {
 export const FeedSlide: React.FC<propsFeedlide> = ({ img }) => {
   return (
     <>
-      <div className='relative w-full h-full bg-slate-500'>
-        <img className=' w-[600px] h-[600px] border-l-2 border-gray-200 '
+      <div className='relative w-full h-full bg-white p-5'>
+        <img className=' w-full h-full border-l-2 border-gray-200 rounded-2xl'
           src={img}
           alt="banner" />
       </div>

@@ -21,6 +21,31 @@ body {
   /* padding: 1rem; */
 }
 
+@layer base{
+
+}
+
+@layer components {
+  .homeChild{
+    @apply relative w-screen h-screen
+  }
+  .childTitle{
+    @apply relative w-full h-[20%] pt-10 content-center text-center justify-center
+  }
+  .childContent{
+    @apply flex w-full h-[80%]
+  }
+  .childContentR{
+    @apply relative w-full h-[80%]
+  }
+
+  
+
+  .homeTitle{
+    @apply font-bold text-4xl text-pink-400 font-about
+  }
+  
+}
 
 @layer utilities {
   .text-balance {
