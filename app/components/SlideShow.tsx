@@ -28,9 +28,9 @@ interface propsFeedlide {
 export const HomeSlide: React.FC<propsHomeSlide> = ({ img }) => {
   return (
     <>
-      <div className='homeChild relative'>
-        <div className='flex w-full h-screen' >
-          <img className='w-full h-1/2 md:h-full lg:h-full '
+      <div className='relative w-screen xs:h-[300px] lg:h-screen'>
+        <div className='flex w-full h-full'>
+          <img className='w-full xs:[300px] lg:h-full'
             src={img}
             alt="banner" />
         </div>
@@ -44,8 +44,8 @@ export const HomeSlide: React.FC<propsHomeSlide> = ({ img }) => {
 export const AboutSlide: React.FC<propsAboutSlide> = ({ img }) => {
   return (
     <>
-      <div className='relative w-full h-full p-4 rounded-2xl bg-white'>
-        <img className='relative w-full h-[560px] border-l-2 border-gray-200 rounded-2xl'
+      <div className='xs:flex lg:relative w-full h-full xs:p-2 lg:p-4 rounded-2xl bg-white'>
+        <img className='relative w-full xs:h-[300px] lg:h-[560px] border-l-2 border-gray-200 rounded-2xl'
           src={img}
           alt="banner" />
       </div>
@@ -53,15 +53,11 @@ export const AboutSlide: React.FC<propsAboutSlide> = ({ img }) => {
   )
 }
 
-
-
-
-
 //Feedback
 export const FeedSlide: React.FC<propsFeedlide> = ({ img }) => {
   return (
     <>
-      <div className='relative w-full h-full bg-white p-5'>
+      <div className='relative w-full h-full bg-white xs:p-2 lg:p-5'>
         <img className=' w-full h-full border-l-2 border-gray-200 rounded-2xl'
           src={img}
           alt="banner" />
@@ -74,7 +70,7 @@ export const FeedSlide: React.FC<propsFeedlide> = ({ img }) => {
 export const ProductSlide: React.FC<propsProdSlide> = ({ img, title, price, sellPrice }) => {
   return (
     <>
-      <div className='flex-grow w-auto h-[500px] p-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 border-2 border-gray-100 rounded-lg ml-3 hover:shadow-2xl shadow-gray-600 cursor-pointer'>
+      <div className='flex-grow w-auto h-[500px] xs:p-10 lg:p-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 border-2 border-gray-100 rounded-lg ml-3 hover:shadow-2xl shadow-gray-600 cursor-pointer'>
         <div className='flex h-5/6'>
           <img src={img} className='w-full h-auto rounded-lg' />
         </div>

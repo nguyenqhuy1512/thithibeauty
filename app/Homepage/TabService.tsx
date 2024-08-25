@@ -38,10 +38,12 @@ const TabService: React.FC<propsTypes> = ({ props }: propsTypes) => {
             <div className='relative w-full h-[10%] items-center justify-center'>
                 <ul className='flex h-full w-full items-center justify-center'>
                     {props.map((item) => (
-                        <li key={item.id} onClick={() => { setTabSelectId(item.id) }} 
-                            className={`${item.id === tabSelectId && `bg-pink-50`} cursor-pointer grid rounded-lg text-center content-center place-items-center w-full h-auto p-2 hover:underline hover:text-pink-400 hover:bg-pink-50`}>
-                            <img src={item.img} className='flex w-20 h-20 mb-5 cursor-pointer' />
-                            <span className={`border-none bg-transparent text-lg hover:underline hover:text-pink-400 cursor-pointer 
+                        <li key={item.id} onClick={() => { setTabSelectId(item.id) }}
+                            className={`${item.id === tabSelectId && `bg-pink-50`} 
+                            cursor-pointer grid rounded-lg text-center content-center place-items-center w-full h-full
+                            hover:underline hover:text-pink-400 hover:bg-pink-50`}>
+                            <img src={item.img} className='flex xs:w-10 xs:h-10 lg:w-20 lg:h-20 mb-5 cursor-pointer' />
+                            <span className={`border-none bg-transparent xs:text-sm lg:text-lg hover:underline hover:text-pink-400 cursor-pointer 
                                     ${item.id === tabSelectId && `text-pink-400 underline`} `}>
                                 {item.title}
                             </span>
@@ -51,9 +53,18 @@ const TabService: React.FC<propsTypes> = ({ props }: propsTypes) => {
             </div>
 
             {/* CONTENT LIEU TRINH */}
-            <div className='relative w-full h-[60%] mt-5 p-10 shadow-xl rounded-xl bg-pink-50'>
-                <div className='flex w-full h-full'>
-                    <div className='flex-grow w-[60%] h-full p-5 place-content-center rounded-2xl '>
+            <div className='relative w-full h-[60%] p-10 shadow-xl rounded-xl bg-pink-50'>
+                <div className='xs:flex-grow lg:flex  w-full h-full'>
+
+
+                    <div className='flex xs:w-full lg:w-[40%] h-full xs:pl-10 xs:pr-10 lg:pl-20 lg:pr-20'>
+                        <img className='w-full xs:h-[300px] lg:h-[500px] rounded-lg '
+                            src={selectedTab.imgItem}
+                            alt="banner" />
+                    </div>
+
+
+                    <div className='flex-grow xs:w-full lg:w-[60%] h-full p-5 place-content-center rounded-2xl'>
                         <div className='flex justify-center'>
                             <span className='text-gray-700 text-md'>{selectedTab.descript}</span>
                         </div>
@@ -67,7 +78,7 @@ const TabService: React.FC<propsTypes> = ({ props }: propsTypes) => {
                                 </button>
                             </div>
                             <div className='flex justify-center group'>
-                                <button className='btn w-full group-hover:text-white hover:bg-gray-500 hover:outline-none hover:font-bold  bg-gray-300'>
+                                <button className='btn w-auto group-hover:text-white hover:bg-gray-500 hover:outline-none hover:font-bold bg-gray-300'>
                                     XEM CHI TIẾT
                                     <svg className="group-hover:text-white w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
@@ -76,11 +87,17 @@ const TabService: React.FC<propsTypes> = ({ props }: propsTypes) => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex w-[40%] h-full pl-20 pr-20'>
-                        <img className='w-full h-full rounded-lg '
-                            src={selectedTab.imgItem}
-                            alt="banner" />
-                    </div>
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </>

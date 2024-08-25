@@ -26,23 +26,45 @@ body {
 }
 
 @layer components {
+  /* homepage */
   .homeChild{
-    @apply relative w-screen h-screen
+    @apply relative w-screen h-fit 
   }
   .childTitle{
-    @apply relative w-full h-[20%] pt-10 content-center text-center justify-center
+    @apply relative w-full xs:h-[10%] xs:pt-5 lg:h-[20%] lg:pt-10 content-center text-center justify-center
   }
   .childContent{
-    @apply flex w-full h-[80%]
+    @apply xs:flex-grow lg:flex w-full xs:h-[90%] lg:h-[80%]
   }
   .childContentR{
-    @apply relative w-full h-[80%]
+    @apply relative w-full h-[80%] 
+  }
+  .homeTitle{
+    @apply font-bold xs:text-xl lg:text-4xl text-pink-400 font-about
   }
 
-  
+  /* navbar */
+  .navItem{
+    @apply content-center text-pink-600 hover:text-pink-300 hover:underline font-bold text-xl
+  }
+  .navChildItem{
+    @apply block px-4 py-2 hover:bg-pink-100 text-pink-600
+  }
+  .mbNavItem{
+    @apply text-pink-600 hover:text-pink-300 hover:underline hover:ml-5 font-bold duration-300
+  }
 
-  .homeTitle{
-    @apply font-bold text-4xl text-pink-400 font-about
+  /* footer */
+  .infoTxt{
+    @apply text-white text-xl hover:text-pink-800 hover:ml-5 hover:underline duration-300 font-service
+  }
+
+  .fontSzTitle{
+    @apply xs:text-xl lg:text-2xl font-service font-semibold
+  }
+
+  .fontSzCont{
+    @apply xs:text-lg lg:text-xl font-service
   }
   
 }
@@ -51,6 +73,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
 }
 
 
