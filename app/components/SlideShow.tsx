@@ -45,7 +45,7 @@ export const AboutSlide: React.FC<propsAboutSlide> = ({ img }) => {
   return (
     <>
       <div className='xs:flex lg:relative w-full h-full xs:p-2 lg:p-4 rounded-2xl bg-white'>
-        <img className='relative w-full xs:h-[300px] lg:h-[560px] border-l-2 border-gray-200 rounded-2xl'
+        <img className='relative w-full xs:h-[300px] lg:h-[610px] border-l-2 border-gray-200 rounded-2xl'
           src={img}
           alt="banner" />
       </div>

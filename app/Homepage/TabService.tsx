@@ -1,5 +1,9 @@
 'use client';
 import React, { useState, useEffect } from 'react'
+import Slider from 'react-slick';
+import { ProductSlide } from '../components/SlideShow';
+import { setProd } from '../components/config';
+import { prodList } from '../components/content';
 
 
 interface propsTypes {
@@ -12,7 +16,7 @@ interface propsType {
     title: string,
     content: {
         imgItem: string,
-        descript: string,
+        descript: any
     }
 }
 
@@ -35,15 +39,15 @@ const TabService: React.FC<propsTypes> = ({ props }: propsTypes) => {
     return (
         <>
             {/* LIST LIEU TRINH */}
-            <div className='relative w-full h-[10%] items-center justify-center'>
+            <div className='relative w-full h-[10%] items-center justify-center mt-10 lg:pl-[30%] lg:pr-[30%] select-none '>
                 <ul className='flex h-full w-full items-center justify-center'>
                     {props.map((item) => (
                         <li key={item.id} onClick={() => { setTabSelectId(item.id) }}
-                            className={`${item.id === tabSelectId && `bg-pink-50`} 
-                            cursor-pointer grid rounded-lg text-center content-center place-items-center w-full h-full
-                            hover:underline hover:text-pink-400 hover:bg-pink-50`}>
-                            <img src={item.img} className='flex xs:w-10 xs:h-10 lg:w-20 lg:h-20 mb-5 cursor-pointer' />
-                            <span className={`border-none bg-transparent xs:text-sm lg:text-lg hover:underline hover:text-pink-400 cursor-pointer 
+                            className={`${item.id === tabSelectId && `border-2 border-pink-200 font-bold`} 
+                            cursor-pointer grid  text-center content-center place-items-center w-full h-full
+                            hover:underline hover:text-pink-400 p-5 group `}>
+                            <img src={item.img} className='flex xs:w-10 xs:h-10 lg:w-20 lg:h-20 mb-2 cursor-pointer' />
+                            <span className={`font-about border-none bg-transparent xs:text-sm group-hover:font-bold lg:text-lg hover:underline hover:text-pink-400 cursor-pointer 
                                     ${item.id === tabSelectId && `text-pink-400 underline`} `}>
                                 {item.title}
                             </span>
@@ -53,21 +57,24 @@ const TabService: React.FC<propsTypes> = ({ props }: propsTypes) => {
             </div>
 
             {/* CONTENT LIEU TRINH */}
-            <div className='relative w-full h-[60%] p-10 shadow-xl rounded-xl bg-pink-50'>
-                <div className='xs:flex-grow lg:flex  w-full h-full'>
+            <div className='relative w-full h-[60%] select-none lg:pl-[15%] lg:pr-[15%]'>
+                <div className="absolute h-full bg-white bg-opacity-50 pr-[15%] pl-10 pt-10 pb-10">
+                    
+                    {/* content */}
 
-
-                    <div className='flex xs:w-full lg:w-[40%] h-full xs:pl-10 xs:pr-10 lg:pl-20 lg:pr-20'>
-                        <img className='w-full xs:h-[300px] lg:h-[500px] rounded-lg '
-                            src={selectedTab.imgItem}
-                            alt="banner" />
-                    </div>
-
-
-                    <div className='flex-grow xs:w-full lg:w-[60%] h-full p-5 place-content-center rounded-2xl'>
-                        <div className='flex justify-center'>
-                            <span className='text-gray-700 text-md'>{selectedTab.descript}</span>
-                        </div>
+                    <span className='text-black text-xl font-service font-semibold'>{selectedTab.descript()}</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    {/* button */}
+                    <div className='flex-grow w-full h-full'>
                         <div className='flex justify-center space-x-5 mt-5'>
                             <div className='flex justify-center group'>
                                 <button className="btn hover:bg-pink-600 group-hover:text-white hover:font-bold bg-pink-200 text-pink-600 ">
@@ -87,18 +94,9 @@ const TabService: React.FC<propsTypes> = ({ props }: propsTypes) => {
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
                 </div>
+                {/* background */}
+                <img src={selectedTab.imgItem} alt="Image" className="w-full h-[600px] rounded-2xl" />
             </div>
         </>
     )

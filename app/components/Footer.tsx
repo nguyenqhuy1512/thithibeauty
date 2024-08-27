@@ -26,7 +26,7 @@ const Footer = () => {
 
         <div className='flex-grow xs:h-1/5 xs:w-full lg:h-full lg:w-1/5 lg:text-center xs:p-5 lg:p-10'>
           <h3 className="text-2xl font-semibold text-pink-600 xs:ml-5 lg:ml-0 mb-4 font-about">THÔNG TIN</h3>
-          <ul className="text-gray-400 text-sm space-y-2 text-start ml-5">
+          <ul className="text-gray-400 text-sm space-y-2 text-start ml-10">
             <li><a href="#" className="infoTxt">Trang chủ</a></li>
             <li><a href="#" className="infoTxt">Giới thiệu</a></li>
             <li><a href="#" className="infoTxt">Dịch vụ</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
 
         <div className='flex-grow xs:h-1/5 xs:w-full lg:h-full lg:w-1/5 lg:text-center xs:p-5 lg:p-10'>
           <h3 className="text-2xl font-semibold text-pink-600 xs:ml-5 mb-4 font-about">LIỆU TRÌNH</h3>
-          <ul className="text-gray-400 text-sm space-y-2 text-start ml-5">
+          <ul className="text-gray-400 text-sm space-y-2 text-start ml-10">
             <li><a href="#" className="infoTxt">Liệu trình 1</a></li>
             <li><a href="#" className="infoTxt">Liệu trình 2</a></li>
             <li><a href="#" className="infoTxt">Liệu trình 3</a></li>
@@ -87,8 +87,8 @@ const Footer = () => {
 
 
       </div>
-      <div className='flex w-full h-[50px] bg-white justify-center items-center'>
-        <span>Copyright © Thi Thi Beauty</span>
+      <div className='flex w-full h-[50px] bg-pink-50 justify-center items-center'>
+        <span className='text-black'>Copyright © Thi Thi Beauty</span>
       </div>
     </footer>
 

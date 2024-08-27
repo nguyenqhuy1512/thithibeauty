@@ -30,6 +30,9 @@ body {
   .homeChild{
     @apply relative w-screen h-fit 
   }
+  .pageChild{
+    @apply relative w-screen h-screen
+  }
   .childTitle{
     @apply relative w-full xs:h-[10%] xs:pt-5 lg:h-[20%] lg:pt-10 content-center text-center justify-center
   }
@@ -40,15 +43,15 @@ body {
     @apply relative w-full h-[80%] 
   }
   .homeTitle{
-    @apply font-bold xs:text-xl lg:text-4xl text-pink-400 font-about
+    @apply font-bold xs:text-xl lg:text-4xl text-pink-400 font-about select-none
   }
 
   /* navbar */
   .navItem{
-    @apply content-center text-pink-600 hover:text-pink-300 hover:underline font-bold text-xl
+    @apply content-center text-pink-600 hover:text-pink-300 hover:underline font-bold text-xl font-about
   }
   .navChildItem{
-    @apply block px-4 py-2 hover:bg-pink-100 text-pink-600
+    @apply block px-4 py-2 hover:bg-pink-100 text-pink-600 font-about
   }
   .mbNavItem{
     @apply text-pink-600 hover:text-pink-300 hover:underline hover:ml-5 font-bold duration-300

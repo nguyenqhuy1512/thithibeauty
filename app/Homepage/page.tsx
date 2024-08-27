@@ -6,6 +6,7 @@ import TabService from './TabService';
 import { setSlide, setProd, setFeed, setAbout, setFeedMb, setProdMb } from '@/app/components/config'
 import { slideData, serviceData, prodList, slideFeed, slideAbout, aboutInfo, PhotoLibrary } from '../components/content';
 import LightBox from './LightBox';
+import '../components/logo';
 
 
 const page = () => {
@@ -25,7 +26,7 @@ const page = () => {
       </div>
 
       {/* ABOUT */}
-      <div className='homeChild xs:p-5 lg:pl-[15%] lg:pr-[15%] bg-pink-50'>
+      <div className='homeChild xs:p-5 lg:pl-[15%] lg:pr-[15%] bg-pink-50 select-none'>
         <div className='childTitle'>
           <span className='homeTitle'>
             THI THI BEAUTY
@@ -39,7 +40,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className='childContent lg:mt-10'>
+        <div className='childContent lg:mt-10  lg:mb-10'>
           <div className='xs:flex-grow xs:w-full xs:h-1/2 xs:mt-2 lg:relative lg:w-1/2 lg:h-full lg:mt-0'>
             <Slider {...setAbout}>
               {slideAbout.map((item) => (
@@ -49,24 +50,14 @@ const page = () => {
           </div>
           <div className='flex-grow xs:w-full xs:h-1/2 xs:ml-0 xs:mt-7 lg:mt-0 lg:ml-5 lg:w-1/2 lg:h-full rounded-2xl'>
             <div className='flex-grow w-full h-fit bg-white shadow-xl rounded-2xl p-5'>
-              <span className=' flex justify-center  fontSzTitle '>Vì sao chọn
-                <span className='text-pink-400'>&nbsp; THI THI BEAUTY &nbsp;</span> ?</span>
-              <span className='fontSzCont'>{aboutInfo.profile}</span>
-            </div>
-            <div className='flex-grow w-full h-fit bg-white shadow-xl rounded-2xl xs:mt-2 lg:mt-5 p-5'>
-              <span className='flex justify-center fontSzTitle' >Không gian</span>
-              <span className='fontSzCont'>{aboutInfo.condition}</span>
-            </div>
-            <div className='flex-grow w-full h-fit bg-white shadow-xl rounded-2xl xs:mt-2 lg:mt-5 p-5 '>
-              <span className=' flex justify-center fontSzTitle '>Chuyên môn</span>
-              <span className='fontSzCont'>{aboutInfo.profession}</span>
+              {aboutInfo()}
             </div>
           </div>
         </div>
       </div>
 
       {/*LIEU TRINH */}
-      <div className='homeChild xs:p-5 lg:pl-[15%] lg:pr-[15%] bg-white' >
+      <div className='homeChild xs:p-5 bg-white' >
         <div className='childTitle'>
           <span className='homeTitle'>
             LIỆU TRÌNH
