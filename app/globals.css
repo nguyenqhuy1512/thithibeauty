@@ -59,7 +59,7 @@ body {
 
   /* footer */
   .infoTxt{
-    @apply text-white text-xl hover:text-pink-800 hover:ml-5 hover:underline duration-300 font-service
+    @apply text-pink-600 text-xl hover:text-blue-600 hover:ml-5 hover:underline duration-300 font-service
   }
 
   .fontSzTitle{

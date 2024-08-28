@@ -4,7 +4,7 @@ import Slider from "react-slick"
 import { HomeSlide, ProductSlide, FeedSlide, AboutSlide } from '../components/SlideShow'
 import TabService from './TabService';
 import { setSlide, setProd, setFeed, setAbout, setFeedMb, setProdMb } from '@/app/components/config'
-import { slideData, serviceData, prodList, slideFeed, slideAbout, aboutInfo, PhotoLibrary } from '../components/content';
+import { slideData, serviceData, prodList, slideFeed, slideAbout, aboutInfo, PhotoLibrary, brandNmList } from '../components/content';
 import LightBox from './LightBox';
 import '../components/logo';
 
@@ -63,7 +63,9 @@ const page = () => {
             LIỆU TRÌNH
           </span>
         </div>
-        <TabService props={serviceData} />
+        <div className='flex-grow w-full xs:h-[90%] lg:h-[80%] '>
+          <TabService props={serviceData} />
+        </div>
       </div>
 
       {/* FEEDBACK */}
@@ -92,14 +94,34 @@ const page = () => {
       </div>
 
       {/* SLIDE SAN PHAM LAM DEP */}
-      <div className='homeChild pl-[10%] pr-[10%] bg-white h-fit'>
+      <div className='homeChild pl-[10%] pr-[10%] bg-white'>
         <div className='relative w-full h-1/2'>
           <div className='childTitle'>
             <span className='homeTitle'>
               SẢN PHẨM LÀM ĐẸP
             </span>
           </div>
-          <div className='childContentR mt-10 mb-20 space-x-10 xs:hidden sm:block md:block lg:block xl:block'>
+
+          {/* brandname */}
+          <div className='flex-grow h-[20%] w-full bg-white mt-10'>
+            <div className='flex h-full w-full mb-5 text-center'>
+              <span className='xs:text-md lg:text-xl font-about'>Thương hiệu mỹ phẩm uy tín đang hợp tác</span>
+            </div>
+            <div className='xs:flex-grow lg:flex lg:h-full lg:w-full justify-center space-x-5 mr-5'>
+              {brandNmList.map((item) => (
+                  <div key={item.id} className='flex xs:h-28 xs:w-40 lg:h-40 lg:w-60 xs:p-2 lg:p-5 border-2 border-gray-200 rounded-2xl justify-center items-center
+                  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 
+                  '>
+                    <img src={item.img} className='h-full w-full' />
+                  </div>
+              ))}
+            </div>
+          </div>
+
+          <div className='childContentR mt-10 mb-20 xs:hidden sm:block md:block lg:block xl:block lg:h-[60%]'>
+            <div className='flex h-full w-full mb-5 text-center'>
+              <span className='xs:text-md lg:text-xl font-about '>Các dòng sản phẩm nổi bật và được ưa chuận</span>
+            </div>
             <Slider {...setProd}>
               {prodList.map((item) => (
                 <ProductSlide
@@ -113,7 +135,10 @@ const page = () => {
             </Slider>
           </div>
 
-          <div className='childContentR mt-5 mb-10 space-x-10 xs:block sm:hidden md:hidden lg:hidden xl:hidden'>
+          <div className='childContentR mt-5 mb-10 xs:block sm:hidden md:hidden lg:hidden xl:hidden'>
+            <div className='flex h-full w-full mb-5 text-center'>
+              <span className='xs:text-md lg:text-xl font-about'>Các dòng sản phẩm nổi bật và được ưa chuận</span>
+            </div>
             <Slider {...setProdMb}>
               {prodList.map((item) => (
                 <ProductSlide
@@ -142,7 +167,7 @@ const page = () => {
         </div>
         <div className='childContentR xs:mt-0 lg:mt-10'>
           <LightBox
-            images={PhotoLibrary}/>
+            images={PhotoLibrary} />
         </div>
       </div>
 

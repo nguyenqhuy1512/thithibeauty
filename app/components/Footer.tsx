@@ -1,32 +1,25 @@
 import React from 'react'
+import logo from './logo'
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-pink-200 to-pink-400 xs:h-fit lg:h-[400px] ">
+    <footer className="bg-gradient-to-r from-pink-200 to-pink-100  xs:h-fit lg:h-[400px] ">
       <div className='xs:flex-grow lg:flex h-full w-full xs:p-5 lg:pl-[10%] lg:pr-[10%]'>
 
 
-        <div className='flex-grow xs:h-1/4 xs:w-full lg:h-full lg:w-1/4'>
-          <div className='flex h-1/3 items-center pl-10'>
-            <img className='skeleton w-20 h-20 rounded-full' src="./logo.png" />
-            <span className="font-bold text-2xl font-about text-pink-600 ml-5">
-              THI THI BEAUTY
-            </span>
-          </div>
-          <div className='flex pl-10 pb-5 xs:pt-5 lg:pt-0 text-center items-center'>
-            <span className='text-md'><span className='text-lg font-about font-semibold'>THI THI Beauty & Spa</span> - Điểm đến làm đẹp lý tưởng. 
-              Chúng tôi mong muốn spa sẽ trở thành nơi mọi người giải tỏa được sự mệt mỏi và tìm thấy niềm vui, 
-              sự sẻ chia thân tình bên bạn bè và người thân.
-            </span>
+
+        <div className='flex justify-center items-center xs:h-1/4 xs:w-full lg:h-full lg:w-1/6'>
+          <div className='flex xs:h-[100px] xs:w-[100px] lg:h-[170px] lg:w-[170px] items-center bg-white rounded-full p-5'>
+            {logo()}
           </div>
         </div>
 
 
 
 
-        <div className='flex-grow xs:h-1/5 xs:w-full lg:h-full lg:w-1/5 lg:text-center xs:p-5 lg:p-10'>
-          <h3 className="text-2xl font-semibold text-pink-600 xs:ml-5 lg:ml-0 mb-4 font-about">THÔNG TIN</h3>
-          <ul className="text-gray-400 text-sm space-y-2 text-start ml-10">
+        <div className='flex-grow xs:h-1/6 xs:w-full lg:h-full lg:w-1/6 lg:text-center xs:p-5 lg:p-10'>
+          <h3 className="xs:text-lg lg:text-2xl font-semibold text-pink-600 xs:ml-5 lg:ml-0 mb-4 font-about">THÔNG TIN</h3>
+          <ul className="text-sm space-y-2 text-start ml-7">
             <li><a href="#" className="infoTxt">Trang chủ</a></li>
             <li><a href="#" className="infoTxt">Giới thiệu</a></li>
             <li><a href="#" className="infoTxt">Dịch vụ</a></li>
@@ -36,37 +29,36 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className='flex-grow xs:h-1/5 xs:w-full lg:h-full lg:w-1/5 lg:text-center xs:p-5 lg:p-10'>
-          <h3 className="text-2xl font-semibold text-pink-600 xs:ml-5 mb-4 font-about">LIỆU TRÌNH</h3>
-          <ul className="text-gray-400 text-sm space-y-2 text-start ml-10">
-            <li><a href="#" className="infoTxt">Liệu trình 1</a></li>
-            <li><a href="#" className="infoTxt">Liệu trình 2</a></li>
-            <li><a href="#" className="infoTxt">Liệu trình 3</a></li>
-            <li><a href="#" className="infoTxt">Liệu trình 4</a></li>
+        <div className='flex-grow xs:h-1/6 xs:w-full lg:h-full lg:w-1/6 lg:text-center xs:p-5 lg:p-10'>
+          <h3 className="xs:text-lg lg:text-2xl font-semibold text-pink-600 xs:ml-5 mb-4 font-about">LIỆU TRÌNH</h3>
+          <ul className="text-gray-400 text-sm space-y-2 text-start ml-7">
+            <li><a href="#" className="infoTxt">Mesotheraphy</a></li>
+            <li><a href="#" className="infoTxt">Chemical Peel</a></li>
+            <li><a href="#" className="infoTxt">Chăm sóc mụn</a></li>
           </ul>
         </div>
 
 
-        <div className='flex xs:h-2/5 xs:w-full lg:h-full lg:w-2/5 xs:p-5 lg:p-10'>
+        <div className='flex xs:h-2/5 xs:w-full lg:h-full lg:w-3/6 xs:p-5 lg:p-0 lg:pt-10'>
           <div className='flex-grow h-full w-full lg:text-center lg:p-0'>
-            <h3 className="text-2xl font-semibold text-pink-600 xs:ml-5 mb-4 font-about">LIÊN HỆ</h3>
+            <h3 className="xs:text-lg lg:text-2xl font-semibold text-pink-600 xs:ml-5 lg:ml-0 xs:mr-0 lg:mr-28 mb-4 font-about">LIÊN HỆ</h3>
             <ul className="text-gray-400 text-sm">
-              <li className='flex justify-center'>
-                <div className='flex justify-center rounded-full h-12 pl-5 pr-5 text-center'>
+              <li className='flex'>
+                <div className='flex h-12 pl-5'>
                   <img src='./location.png' className='flex w-7 h-7' />
-                  <span className='flex ml-2 text-white text-xl font-about'>133 Đường 19/4 - P.Xuân An - TP.Phan Thiết</span>
+                  <span className='flex ml-2 text-pink-600 xs:text-md lg:text-xl font-about'>133 Đường 19/4 - P.Xuân An - TP.Phan Thiết - T.Bình Thuận</span>
                 </div>
               </li>
-              <li className='flex justify-center'>
-                <div className='flex justify-center rounded-full h-12 items-center pl-5 pr-5 '>
+              <li className='flex xs:mt-5 lg:mt-0'>
+                <div className='flex rounded-full h-12 pl-5 pr-5 '>
                   <img src='./phone.png' className='flex w-10 h-10' />
-                  <span className='flex ml-2 text-white font-bold text-3xl font-about'>0971 781 276</span>
+                  <span className='flex ml-2 text-pink-600 font-bold xs:text-lg lg:text-3xl font-about'>0971 781 276</span>
                 </div>
               </li>
 
-              
-              <li className='flex justify-center mt-5'>
-                <div className='flex justify-center space-x-5 ' >
+
+              <li className='flex ml-5 mt-2'>
+                <div className='flex  space-x-2 ' >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="facebook" className='w-10 h-10'>
                     <path fill="#1877f2" d="M1024,512C1024,229.23016,794.76978,0,512,0S0,229.23016,0,512c0,255.554,187.231,467.37012,432,505.77777V660H302V512H432V399.2C432,270.87982,508.43854,200,625.38922,200,681.40765,200,740,210,740,210V336H675.43713C611.83508,336,592,375.46667,592,415.95728V512H734L711.3,660H592v357.77777C836.769,979.37012,1024,767.554,1024,512Z"></path><path fill="#fff" d="M711.3,660,734,512H592V415.95728C592,375.46667,611.83508,336,675.43713,336H740V210s-58.59235-10-114.61078-10C508.43854,200,432,270.87982,432,399.2V512H302V660H432v357.77777a517.39619,517.39619,0,0,0,160,0V660Z">
                     </path>
@@ -82,7 +74,7 @@ const Footer = () => {
           </div>
         </div>
 
-        
+
 
 
 

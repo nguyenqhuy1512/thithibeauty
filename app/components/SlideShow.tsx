@@ -66,7 +66,6 @@ export const FeedSlide: React.FC<propsFeedlide> = ({ img }) => {
   )
 }
 
-
 export const ProductSlide: React.FC<propsProdSlide> = ({ img, title, price, sellPrice }) => {
   return (
     <>

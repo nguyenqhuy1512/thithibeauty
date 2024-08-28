@@ -26,43 +26,39 @@ export const slideAbout = [
     },
 ];
 
-
-
-
-export const slideCerti = [
-    {
-        id: 0,
-        img: ""
-    },
-    {
-        id: 0,
-        img: ""
-    },
-];
-
-
 export const serviceData = [
     {
         id: 0,
         img: "/meso.svg",
         title: "MESOTHERAPHY",
         content: {
-            imgItem: "/mesobg.jpeg",
+            imgItem: "/meso.jpg",
             descript: () => {
                 return (
                     <>
-                        <div>
-                            &nbsp;&nbsp;&nbsp; Mesotherapy là một phương pháp chăm sóc da được sử dụng rộng rãi, đặc biệt trong việc cải thiện ngoại hình da và điều trị một số vấn đề về da.
+                        <div className="xs:text-md lg:text-lg">
+                            <span className="font-semibold">💉 Mesotherapy là gì ? </span>
                             <br />
-                            &nbsp;&nbsp;&nbsp; Cách thức hoạt động của mesotherapy như sau:
+                            👉 Là phương pháp vàng trong làng trẻ hóa, phục hồi da
+                            bằng cách đưa trực tiếp các chất cần thiết cho da vào trung bì như HA, các loại Peptide, vitamin, enzyme, hormone...
                             <br />
-                            &nbsp;&nbsp;&nbsp; Các dưỡng chất, vitamin, và các hợp chất khác được tiêm dưới da tại những vùng cụ thể trên cơ thể. Điều này giúp các thành phần này được hấp thu trực tiếp vào tế bào da, mang lại hiệu quả nhanh chóng.
+                            <span className="font-semibold">❤️ Tác dụng của Mesotherapy ? </span>
                             <br />
-                            &nbsp;&nbsp;&nbsp; Mesotherapy có thể được sử dụng để điều trị nhiều vấn đề da như da chùng nhão, rám nắng, lão hóa da, vết thâm, mụn, và các vấn đề khác. Nó cũng có thể được dùng để cải thiện ngoại hình như thu gọn vùng eo, đùi.
-                            Quy trình điều trị mesotherapy thường kéo dài từ 4-6 lần, tùy theo tình trạng da và mục tiêu điều trị. Sau mỗi lần điều trị, da sẽ trở nên căng bóng, tươi sáng hơn.
-                            Điều quan trọng là phải sử dụng dịch vụ mesotherapy từ các chuyên gia da liễu có kinh nghiệm, đảm bảo an toàn và hiệu quả cho người sử dụng.
+                            ✅ Trẻ hóa và săn chắc da.<br />
+                            ✅ Làm sáng da.<br />
+                            ✅ Kích thích mọc tóc.<br />
+                            ✅ Điều trị sẹo rỗ.<br />
+                            ✅ Điều trị chứng tăng tiết mồ hôi.
                             <br />
-                            &nbsp;&nbsp;&nbsp; Tóm lại, mesotherapy là một phương pháp chăm sóc da nội sinh tiềm năng, mang lại nhiều lợi ích về thẩm mỹ và sức khỏe da.
+                            <span className="font-semibold">💆 Mesotherapy phù hợp với ? </span>
+                            <br />
+                            🌿 Làn da mệt mỏi, sạm xỉn mất nước<br />
+                            🌿 Da yếu, tổn thương, cần phục hồi từ gốc<br />
+                            🌿 Da lão hoá nhẹ đến nhiều, xuất hiện nhăn li ti<br />
+                            🌿 Hay đơn giản làn da muốn được căng bóng khoẻ, ngậm nước, trong trẻo như sương mai từ tận gốc
+                            <br />
+                            <span className="font-semibold">⏳ Thời gian trị liệu :  </span>  2 – 4 tuần/lần( Duy trì từ 3 - 6 lần).
+                            <br />
                         </div>
                     </>
                 )
@@ -80,14 +76,30 @@ export const serviceData = [
                 return (
                     <>
                         <div>
-                            Peel là một phương pháp chăm sóc da phổ biến, sử dụng các hóa chất để loại bỏ lớp da bên ngoài, giúp da trở nên sáng mịn và tươi trẻ hơn. Dưới đây là một số thông tin về phương pháp này:
-
-                            Quá trình peel thường sử dụng các axit như axit glycolic, axit salicylic, hoặc axit lactic để tác động lên bề mặt da, làm tróc lớp da chết và kích thích sự tái tạo da mới.
-                            Mức độ peel có thể thay đổi từ nhẹ (peel nông) đến sâu (peel sâu), tùy thuộc vào nhu cầu và tình trạng da của từng người. Peel nông thường an toàn hơn và có ít tác dụng phụ.
-                            Peel được chỉ định để điều trị các vấn đề da như nám, tàn nhang, mụn, da sần sùi, và các dấu hiệu lão hóa da như nếp nhăn, da chùng nhão.
-                            Sau khi thực hiện peel, da sẽ bị bong tróc và hồng lên trong vài ngày đến một tuần. Tuy nhiên, sau khi lớp da mới được tái tạo, da sẽ trở nên mịn màng, tươi sáng hơn.
-                            Cần thực hiện peel định kỳ để duy trì hiệu quả điều trị. Đồng thời, cần tuân thủ các hướng dẫn chăm sóc da sau peel từ chuyên gia.
-                            Peel là một lựa chọn hiệu quả để làm sáng da và cải thiện các vấn đề về da, nhưng cần được thực hiện bởi các chuyên gia da liễu có kinh nghiệm.
+                            <span className="font-semibold">👩 Chemical Peel (Peel da) là gì ? </span>
+                            <br />
+                            👉 Là một phương pháp tẩy tế bào chết trên da, hay gọi là tẩy tế bào chết hóa học với nồng độ cao.
+                            <br />
+                            <span className="font-semibold">❤️ Tác dụng của Chemical Peel (Peel da) ? </span>
+                            <br />
+                            ✅ Loại bỏ các tạp chất nằm sâu bên trong lỗ chân lông.<br />
+                            ✅ Loại bỏ các cồi mụn cùng bã nhờn và vi khuẩn gây mụn, làm thông thoáng và se khít lỗ chân lông.<br />
+                            ✅ Giúp làm giảm rõ rệt các tình trạng: nám da, sạm da, thâm mụn,...<br />
+                            ✅ Tăng khả năng đàn hồi da: giảm tình trạng xuất hiện nếp nhăn, chảy xệ,...<br />
+                            ✅ Rút ngắn chu kì tái tạo da, giúp bạn nhanh chóng có làn da khỏe mạnh.<br />
+                            ✅ Kích thích sự sản sinh Collagen và Elastin làm đầy các tổn thương và tăng độ đàn hồi.
+                            <br />
+                            <span className="font-semibold">💆 Chemical Peel (Peel da) phù hợp với ? </span>
+                            <br />
+                            🌿 Da có mụn ẩn, mụn viêm, mụn đầu đen<br />
+                            🌿 Da nhiều vết thâm, không đều màu.<br />
+                            🌿 Da thiếu sức sống, không căng bóng.<br />
+                            🌿 Da dầu, da khô, da hỗn hợp.<br />
+                            🌿 Da có lỗ chân lông to.<br />
+                            🌿 Da có tuyến bã nhờn hoạt động mạnh
+                            <br />
+                            <span className="font-semibold">⏳ Thời gian trị liệu :  </span>  Đạt kết quả sau 2 - 3 buổi.
+                            <br />
                         </div>
                     </>
                 )
@@ -105,13 +117,28 @@ export const serviceData = [
                 return (
                     <>
                         <div>
-                            Trị mụn là một trong những thách thức thường gặp trong chăm sóc da. Có nhiều phương pháp trị mụn khác nhau, tùy thuộc vào từng trường hợp và mức độ nghiêm trọng của tình trạng mụn:
-                            Sử dụng các sản phẩm chăm sóc da chuyên biệt cho da mụn, chứa các thành phần như benzoyl peroxide, axit salicylic, hoặc retinoids. Các thành phần này giúp làm sạch lỗ chân lông, ức chế sự phát triển của vi khuẩn P.acnes, và kiểm soát tiết bã nhờn.
-                            Điều trị bằng các liệu pháp ánh sáng như laser, ánh sáng xanh, hoặc ánh sáng xung. Các liệu pháp này có tác dụng tiêu diệt vi khuẩn gây mụn và giảm viêm.
-                            Sử dụng các loại thuốc uống như kháng sinh, thuốc điều hòa hormone, hoặc vitamin A dạng retinoid. Các loại thuốc này có tác dụng toàn thân, giúp kiểm soát nguyên nhân gây mụn từ bên trong.
-                            Kết hợp các biện pháp như điều trị bằng kem/gel, liệu pháp ánh sáng, và thuốc uống sẽ mang lại hiệu quả tốt hơn so với sử dụng riêng lẻ.
-                            Khi mụn đã được kiểm soát, việc duy trì chăm sóc da sạch sẽ, cân bằng độ ẩm, và bảo vệ da khỏi tác nhân gây kích ứng là rất quan trọng để ngăn ngừa tái phát.
-                            Tóm lại, việc lựa chọn phương pháp trị mụn phù hợp và tuân thủ hướng dẫn của chuyên gia da liễu là vô cùng cần thiết để đạt được kết quả tối ưu.
+                            <span className="font-semibold">🌝 Điều trị và chăm sóc da mụn </span>
+                            <br />
+                            Quy trình chăm sóc da mụn theo chuẩn y khoa, bao gồm 12 bước:
+                            <br />
+                            👉 B1: Tẩy trang<br />
+                            👉 B2: Rửa mặt<br />
+                            👉 B3: Tẩy tế bào chết( tuỳ tình trạng da)<br />
+                            👉 B4: Xông hơi + hút dầu + cà da chết<br />
+                            👉 B5: Vệ sinh da và khử trùng dụng cụ<br />
+                            👉 B6: Lấy mụn chuẩn y khoa<br />
+                            👉 B7: Đi điện tím<br />
+                            👉 B8: Đắp mặt nạ<br />
+                            👉 B9: Bôi kháng sinh tại chỗ<br />
+                            👉 B10 Chiếu ánh sáng sinh học<br />
+                            👉 B11 Điện di máy lạnh<br />
+                            👉 B12: Tư vấn cách điều trị và chăm sóc da tại nhà<br />
+                            <span className="font-semibold">❤️ Kết quả điều trị </span>
+                            <br />
+                            ✅ Làm sạch và loại bỏ mụn trên da mặt.<br />
+                            ✅ Phục hồi và tái tạo lại vùng da bị mụn.<br />
+                            ✅ Bổ sung các dưỡng chất cần thiết cho việc phục hồi và dưỡng da.<br />
+                            ✅ Làm mờ đi các vết sẹo tạo ra bởi mụn.<br />
                         </div>
                     </>
                 )
@@ -120,7 +147,6 @@ export const serviceData = [
         }
     },
 ];
-
 
 export const slideFeed = [
     {
@@ -154,6 +180,36 @@ export const slideFeed = [
         title: "car3"
     },
 ];
+
+export const brandNmList= [
+    {
+        id:0,
+        img:"/brand/ivatherm.jpg",
+        brandNm:"Ivatherm",
+    },
+    {
+        id:2,
+        img:"/brand/ahohwa.png",
+        brandNm:"AHOHWA",
+    },
+    {
+        id:3,
+        img:"/brand/HYAESTIC.webp",
+        brandNm:"HYAESTIC",
+    },
+    {
+        id:5,
+        img:"/brand/postQuam.jpg",
+        brandNm:"postQuam",
+        
+    },
+    {
+        id:6,
+        img:"/brand/eucerin.png",
+        brandNm:"Eucerin",
+    },
+]
+
 
 export const prodList = [
     {
@@ -201,7 +257,7 @@ export const aboutInfo = () => {
                 <span className="xs:text-3xl lg:text-4xl text-pink-400 font-logo font-semibold ">
                     &nbsp;&nbsp;&nbsp;&nbsp;Thi Thi Beauty <span className="xs:text-3xl lg:text-4xl text-black font-logo ">Spa</span>&nbsp;
                 </span>
-                <span className="xs:text-xl lg:text-lg font-about">
+                <span className="xs:text-md lg:text-lg font-about">
                     tự hào là địa chỉ hàng đầu về dịch vụ chăm sóc da mặt chuyên nghiệp tại <span className="font-semibold">Phan Thiết - Bình Thuận</span>.
                     <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Với phương châm lấy nụ cười của khách hàng làm động lực, spa luôn cố gắng, tận tình mang đến cho quý khách
