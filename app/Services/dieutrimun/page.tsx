@@ -5,7 +5,7 @@ const page = () => {
     <>
       <div className='relative w-full h-[300px] bg-pink-50 text-center content-end pb-20'>
         <div className='childTitle'>
-          <span className='homeTitle'>DỊCH VỤ</span>
+          <span className='homeTitle'>Điều trị mụn</span>
         </div>
 
       </div>

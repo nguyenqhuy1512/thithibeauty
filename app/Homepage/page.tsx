@@ -31,12 +31,12 @@ const page = () => {
           <span className='homeTitle'>
             THI THI BEAUTY
           </span>
-          <div className='flex h-auto w-full justify-center'>
-            <span className='w-fit xs:text-2xl lg:text-[40px] font-logo text-center'>Be Natural</span>
+          <div className='flex h-auto w-full justify-center mt-5'>
+            <span className='w-fit xs:text-2xl lg:text-[36px] font-gvibes text-center'>Be Natural</span>
             <span className='text-pink-600 xs:text-2xl lg:text-[40px] font-logo ml-5 mr-5'>♥</span>
-            <span className='w-fit xs:text-2xl lg:text-[40px] font-logo text-center'>Be Beautiful</span>
+            <span className='w-fit xs:text-2xl lg:text-[36px] font-gvibes text-center'>Be Beautiful</span>
             <span className='text-pink-600 xs:text-2xl lg:text-[40px] font-logo ml-5 mr-5'>♥</span>
-            <span className='w-fit xs:text-2xl lg:text-[40px] font-logo text-center'>Be You</span>
+            <span className='w-fit xs:text-2xl lg:text-[36px] font-gvibes text-center'>Be You</span>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ const page = () => {
             LIỆU TRÌNH
           </span>
         </div>
-        <div className='flex-grow w-full xs:h-[90%] lg:h-[80%] '>
+        <div className='flex-grow w-full xs:h-[90%] lg:h-[80%] pb-20'>
           <TabService props={serviceData} />
         </div>
       </div>

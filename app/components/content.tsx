@@ -1,3 +1,4 @@
+// HomePage
 export const slideData = [
     {
         id: 0,
@@ -26,10 +27,49 @@ export const slideAbout = [
     },
 ];
 
+export const aboutInfo = () => {
+    return (
+        <>
+            <div>
+                <span className="xs:text-2xl lg:text-3xl text-pink-400 font-gvibes font-semibold ">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Thi Thi Beauty <span className="xs:text-2xl lg:text-3xl text-black font-gvibes ">Spa</span>&nbsp;
+                </span>
+                <span className="xs:text-md lg:text-lg font-about">
+                    tự hào là địa chỉ hàng đầu về dịch vụ chăm sóc da mặt chuyên nghiệp tại <span className="font-semibold">Phan Thiết - Bình Thuận</span>.
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Với phương châm lấy nụ cười của khách hàng làm động lực, spa luôn cố gắng, tận tình mang đến cho quý khách
+                    những trải nghiệm tuyệt vời và kết quả chăm sóc da vượt trội.
+                    <br /><br />
+                    Các dịch vụ chăm sóc da mặt của Spa bao gồm:
+                    <br />
+                    &nbsp;&nbsp;&nbsp; <span className="font-semibold"><span className="text-pink-600">♣ Mesotherapy</span> </span>&nbsp;(phương pháp tiêm vitamin, enzyme, hormone,...)
+                    <br />
+                    &nbsp;&nbsp;&nbsp; <span className="font-semibold"><span className="text-pink-600">♣ Peel</span></span>&nbsp;(phương pháp chăm sóc da chuyên sâu bằng hợp chất hóa học)
+                    <br />
+                    &nbsp;&nbsp;&nbsp; <span className="font-semibold"><span className="text-pink-600">♣ Chăm sóc da mụn</span> từ cơ bản đến chuyên sâu.</span>
+                    <br /><br />
+
+                    &nbsp;&nbsp;&nbsp;Không chỉ cung cấp các dịch vụ chăm sóc da chuyên sâu, tại Spa còn đề cao tinh thần phục vụ khách hàng một cách chu đáo, ân cần thông qua
+                    những buổi trị liệu da mặt. Khách hàng đến với Spa chúng em luôn được quan tâm, tư vấn và chăm sóc từ lúc bắt đầu các liệu trình đến khi
+                    nhận được những thành quả tuyệt vời và tự tin hơn với làn da của mình.
+                    <br />
+                    &nbsp;&nbsp;&nbsp;Niềm vui của khách hàng luôn là niềm vui và động lực để chúng em nâng cao kiến thức chuyên môn, cố gắng nhiều hơn mỗi ngày.
+                    <br />
+                    <span className="text-pink-600">♥</span> Cảm ơn khách đã luôn tin tưởng, ủng hộ em.
+                    <br />
+                    <span className="text-pink-600">♥</span> Cảm ơn khách đã không bỏ cuộc, đã cùng em lắng nghe làn da của mình.
+
+                </span>
+
+            </div>
+        </>
+    )
+}
+
 export const serviceData = [
     {
         id: 0,
-        img: "/meso.svg",
+        img: "/icon/meso.svg",
         title: "MESOTHERAPHY",
         content: {
             imgItem: "/meso.jpg",
@@ -68,7 +108,7 @@ export const serviceData = [
     },
     {
         id: 1,
-        img: "/Peel.svg",
+        img: "/icon/Peel.svg",
         title: "CHEMICAL PEEL",
         content: {
             imgItem: "/peel.jpg",
@@ -109,7 +149,7 @@ export const serviceData = [
     },
     {
         id: 2,
-        img: "/trimun.svg",
+        img: "/icon/trimun.svg",
         title: "CHĂM SÓC MỤN",
         content: {
             imgItem: "/trimun.jpg",
@@ -181,114 +221,72 @@ export const slideFeed = [
     },
 ];
 
-export const brandNmList= [
+export const brandNmList = [
     {
-        id:0,
-        img:"/brand/ivatherm.jpg",
-        brandNm:"Ivatherm",
+        id: 0,
+        img: "/brand/ivatherm.jpg",
+        brandNm: "Ivatherm",
     },
     {
-        id:2,
-        img:"/brand/ahohwa.png",
-        brandNm:"AHOHWA",
+        id: 2,
+        img: "/brand/ahohwa.png",
+        brandNm: "AHOHWA",
     },
     {
-        id:3,
-        img:"/brand/HYAESTIC.webp",
-        brandNm:"HYAESTIC",
+        id: 3,
+        img: "/brand/HYAESTIC.webp",
+        brandNm: "HYAESTIC",
     },
     {
-        id:5,
-        img:"/brand/postQuam.jpg",
-        brandNm:"postQuam",
-        
+        id: 5,
+        img: "/brand/postQuam.jpg",
+        brandNm: "postQuam",
+
     },
     {
-        id:6,
-        img:"/brand/eucerin.png",
-        brandNm:"Eucerin",
+        id: 6,
+        img: "/brand/eucerin.png",
+        brandNm: "Eucerin",
     },
 ]
-
 
 export const prodList = [
     {
         id: 0,
-        img: "/mp1.jpg",
+        img: "/product/mp1.jpg",
         title: "Serum Ivatherm",
         price: "100.000",
         sellPrice: "90.000",
     },
     {
         id: 1,
-        img: "/mp2.jpg",
+        img: "/product/mp2.jpg",
         title: "Kem dưỡng trắng da AHOHWA",
         price: "150.000",
         sellPrice: "120.000",
     },
     {
         id: 2,
-        img: "/mp3.jpg",
+        img: "/product/mp3.jpg",
         title: "Long Lashes",
         price: "200.000",
         sellPrice: "190.000",
     },
     {
         id: 3,
-        img: "/mp4.jpg",
+        img: "/product/mp4.jpg",
         title: "Serum AHOHWA",
         price: "330.000",
         sellPrice: "300.000",
     },
     {
         id: 4,
-        img: "/mp1.jpg",
+        img: "/product/mp1.jpg",
         title: "Serum AHOHWA",
         price: "330.000",
         sellPrice: "300.000",
     }
 ]
-
-
-export const aboutInfo = () => {
-    return (
-        <>
-            <div>
-                <span className="xs:text-3xl lg:text-4xl text-pink-400 font-logo font-semibold ">
-                    &nbsp;&nbsp;&nbsp;&nbsp;Thi Thi Beauty <span className="xs:text-3xl lg:text-4xl text-black font-logo ">Spa</span>&nbsp;
-                </span>
-                <span className="xs:text-md lg:text-lg font-about">
-                    tự hào là địa chỉ hàng đầu về dịch vụ chăm sóc da mặt chuyên nghiệp tại <span className="font-semibold">Phan Thiết - Bình Thuận</span>.
-                    <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Với phương châm lấy nụ cười của khách hàng làm động lực, spa luôn cố gắng, tận tình mang đến cho quý khách
-                    những trải nghiệm tuyệt vời và kết quả chăm sóc da vượt trội.
-                    <br /><br />
-                    Các dịch vụ chăm sóc da mặt của Spa bao gồm:
-                    <br />
-                    &nbsp;&nbsp;&nbsp; <span className="font-semibold"><span className="text-pink-600">♣ Mesotherapy</span> </span>&nbsp;(phương pháp tiêm vitamin, enzyme, hormone,...)
-                    <br />
-                    &nbsp;&nbsp;&nbsp; <span className="font-semibold"><span className="text-pink-600">♣ Peel</span></span>&nbsp;(phương pháp chăm sóc da chuyên sâu bằng hợp chất hóa học)
-                    <br />
-                    &nbsp;&nbsp;&nbsp; <span className="font-semibold"><span className="text-pink-600">♣ Chăm sóc da mụn</span> từ cơ bản đến chuyên sâu.</span>
-                    <br /><br />
-
-                    &nbsp;&nbsp;&nbsp;Không chỉ cung cấp các dịch vụ chăm sóc da chuyên sâu, tại Spa còn đề cao tinh thần phục vụ khách hàng một cách chu đáo, ân cần thông qua
-                    những buổi trị liệu da mặt. Khách hàng đến với Spa chúng em luôn được quan tâm, tư vấn và chăm sóc từ lúc bắt đầu các liệu trình đến khi
-                    nhận được những thành quả tuyệt vời và tự tin hơn với làn da của mình.
-                    <br />
-                    &nbsp;&nbsp;&nbsp;Niềm vui của khách hàng luôn là niềm vui và động lực để chúng em nâng cao kiến thức chuyên môn, cố gắng nhiều hơn mỗi ngày.
-                    <br />
-                    <span className="text-pink-600">♥</span> Cảm ơn khách đã luôn tin tưởng, ủng hộ em.
-                    <br />
-                    <span className="text-pink-600">♥</span> Cảm ơn khách đã không bỏ cuộc, đã cùng em lắng nghe làn da của mình.
-
-                </span>
-
-            </div>
-        </>
-    )
-}
-
 
 export const PhotoLibrary = [
     {
@@ -340,3 +338,77 @@ export const PhotoLibrary = [
         img: "/lib12.jpg",
     },
 ]
+
+
+//AboutPage
+export const AboutContent = {
+    firstPart: {
+        title: () => {
+            return (
+                <div>
+                    <span className="text-5xl font-service text-pink-300">
+                        "Cô chủ nhỏ" bên trong <br />
+                        chiếc Spa beauty xinh xinh!
+                    </span>
+                </div>
+            )
+        },
+        content: () => {
+            return (
+                <div>
+                    <span className="text-2xl font-service text-pink-800">
+                        Kính chào quý khách đã đến với <span className="font-semibold text-3xl font-gvibes">Thi Thi Beauty Spa </span>.
+                        <br />
+                        Một chiếc Spa tuy nhỏ nhỏ xinh xinh nhưng chứa đựng bên trong là niềm đam mê làm đẹp vô cùng to lớn cũng như mong muốn
+                        mang lại những trãi nghiệm chăm sóc da chất lượng và uy tín nhất dành cho quý khách.
+                        <br />
+                        Spa bên em luôn đặt sự chu đáo, tận tình và tỉ mỉ lên hàng đầu, cùng với những dịch vụ chăm sóc hiệu quả, trang thiết bị
+                        hiện đại và các dòng mỹ phẩm tốt nhất để tiếp đón và phục vụ quý khách hàng.
+                        <br />
+                        Spa luôn mong muốn được lắng nghe và đồng hành cùng quý khách trên suốt hành trình làm đẹp và chăm sóc làn da của mình...
+                    </span>
+                </div>
+
+            )
+        }
+    },
+    secondPart: {
+        img: "/about-img.jpg"
+    },
+    thirdPart: {
+        img: "/photo1.jpg",
+        content: () => {
+            return (
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span className="text-4xl font-service">Vì sao chọn <span className="font-gvibes text-pink-600">Thi Thi Beauty Spa ?</span></span>
+                    <br />
+                    <span className="text-xl font-service">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Một HomeSpa nhỏ xinh với 2 giường điều trị được mở ra vào đầu năm 2022, 
+                        bởi một cô gái cũng nhỏ nhắn nhưng có một niềm đam mê cùng với cái tâm cực lớn với việc làm đẹp và điều trị da. 
+                        Bản thân "cô chủ nhỏ" đã luôn cố gắng cải thiện, làm mới những dịch vụ chăm sóc của Spa từng ngày, 
+                        nhằm đem đến cho khách hàng những liệu trình điều trị an toàn và chất lượng nhất.
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spa luôn đặt bản thân ở vị trí Khách để có thể đồng cảm được những suy tư và lo lắng
+                        của Khách trong những vấn đề về làn da. Spa sẽ luôn chào đón nhiệt thành, tư vấn tận tình, chăm sóc ân cần và theo dõi một cách chu đáo 
+                        với từng case trị liệu của Khách cho đến khi đạt được kết quả mong đợi.
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spa tự tin là nơi có thể đón nhận và đáp ứng mọi nhu cầu của 
+                        Khách về vấn đề khắc phục và làm đẹp làn da. Với các liệu trình mang tính an toàn và hiệu quả cao nhất như Mesotheraphy, Peel da, chăm sóc da mụn từ cơ bản đến nâng cao... 
+                        Mỗi liệu trình đều có những lựa chọn riêng biệt, đa dạng, nhiều loại mỹ phẩm chuyên dụng, có nguồn gốc được kiểm chứng đã và luôn được lựa chọn và chuẩn bị kỹ lưỡng
+                        để có thể phù hợp với đa số cơ địa da của Khách hàng.
+                        <br />  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Niềm vui và nụ cười của Khách hàng sẽ mãi là nguồn động lực to lớn để Spa làm nghề và phát triển
+                        trên hành trình mang lại những trãi nghiệm chăm sóc da ngày càng dễ chịu, thoải mái và hiệu quả nhất.
+                        <br />  <br />  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chân thành, tri ân và hy vọng đón nhận được sự ủng hộ Spa từ Khách. 
+                        Hãy để <span className="text-2xl font-gvibes text-pink-600">Thi Thi Beauty Spa</span> có cơ hội được đồng hành cùng Khách trên hành trình chinh phục và bảo vệ 
+                        làn da của mình.
+                    </span>
+
+                </div>
+            )
+        }
+    }
+
+}

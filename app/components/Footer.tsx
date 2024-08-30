@@ -45,13 +45,13 @@ const Footer = () => {
             <ul className="text-gray-400 text-sm">
               <li className='flex'>
                 <div className='flex h-12 pl-5'>
-                  <img src='./location.png' className='flex w-7 h-7' />
+                  <img src='./icon/location.png' className='flex w-7 h-7' />
                   <span className='flex ml-2 text-pink-600 xs:text-md lg:text-xl font-about'>133 Đường 19/4 - P.Xuân An - TP.Phan Thiết - T.Bình Thuận</span>
                 </div>
               </li>
               <li className='flex xs:mt-5 lg:mt-0'>
                 <div className='flex rounded-full h-12 pl-5 pr-5 '>
-                  <img src='./phone.png' className='flex w-10 h-10' />
+                  <img src='./icon/phone.png' className='flex w-10 h-10' />
                   <span className='flex ml-2 text-pink-600 font-bold xs:text-lg lg:text-3xl font-about'>0971 781 276</span>
                 </div>
               </li>
@@ -67,7 +67,7 @@ const Footer = () => {
                   </path>
                   </svg>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54" id="tiktok" className='w-10 h-10'><g><path fill="#e71d40" d="M8.52,36.36a14.66,14.66,0,1,0,29.32.14l.08-16.41L40,21.23a18.22,18.22,0,0,0,8.67,2.21l0-7.72A10.81,10.81,0,0,1,38,4.86l-7.72,0-.15,31.64a6.95,6.95,0,1,1-6.92-7l0-7.71A14.67,14.67,0,0,0,8.52,36.36Z"></path><path fill="#40d8ff" d="M6.61,34.42a14.66,14.66,0,1,0,29.32.15L36,18.16l2.11,1.14a18.17,18.17,0,0,0,8.68,2.2l0-7.71A10.81,10.81,0,0,1,36.09,2.93l-7.72,0-.16,31.64a6.95,6.95,0,1,1-6.91-7l0-7.71A14.67,14.67,0,0,0,6.61,34.42Z"></path><path fill="#1c1c1c" d="M46.8,21.5l0-6a10.89,10.89,0,0,1-6.6-4,10.87,10.87,0,0,1-4-6.64l-6,0-.15,31.64a6.94,6.94,0,0,1-12.74,3.79,6.94,6.94,0,0,1,3.91-12.7l0-5.67a14.65,14.65,0,0,0-9.47,23.85A14.65,14.65,0,0,0,35.93,34.57L36,18.16l2.11,1.14A18.17,18.17,0,0,0,46.8,21.5Z"></path></g></svg>
-                  <img src='./zalo.png' className='flex w-10 h-10 white' />
+                  <img src='./icon/zalo.png' className='flex w-10 h-10 white' />
                 </div>
               </li>
             </ul>

@@ -58,14 +58,8 @@ const TabService: React.FC<propsTypes> = ({ props }: propsTypes) => {
 
             {/* CONTENT LIEU TRINH */}
             <div className='xs:flex-grow lg:flex w-full h-[90%] select-none lg:pl-[15%] lg:pr-[15%]'>
-                <div className='flex xs:w-full lg:w-1/2 xs:h-[50vw] lg:h-[25vw] py-5'>
+                <div className='flex-grow xs:w-full lg:w-1/2 xs:h-[50vw] lg:h-[25vw] py-5'>
                     <img src={selectedTab.imgItem} className='flex xs:h-[50vw] lg:h-[25vw] w-full rounded-xl shadow-2xl' />
-                </div>
-                <div className='flex-grow h-full xs:w-full xs:pl-0 lg:pl-5 lg:w-1/2 xs:mt-10 lg:mt-0'>
-                    {/* content */}
-                    <div className='flex h-full w-full bg-white bg-opacity-80 mt-5'>
-                        <span className='text-black text-lg font-about'>{selectedTab.descript()}</span>
-                    </div>
                     {/* button */}
                     <div className='flex-grow w-full h-full mt-5'>
                         <div className='flex justify-center space-x-5'>
@@ -87,6 +81,13 @@ const TabService: React.FC<propsTypes> = ({ props }: propsTypes) => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='flex-grow h-full xs:w-full xs:pl-0 lg:pl-5 lg:w-1/2 xs:mt-10 lg:mt-0'>
+                    {/* content */}
+                    <div className='flex h-full w-full bg-white bg-opacity-80 mt-5'>
+                        <span className='text-black text-lg font-about'>{selectedTab.descript()}</span>
+                    </div>
+                    
                 </div>
             </div>
         </>

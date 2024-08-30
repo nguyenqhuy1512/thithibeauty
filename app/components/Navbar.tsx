@@ -60,16 +60,16 @@ const Navbar: React.FC = () => {
                             {logo()}
                         </div>
                         <div className="hidden md:flex space-x-6 lg:space-x-14">
-                            <a href="/" className="navItem">TRANG CHỦ</a>
+                            <Link href="/" className="navItem">TRANG CHỦ</Link>
                             <Link href="/about" className="navItem">GIỚI THIỆU</Link>
                             <div className="relative content-center" onMouseEnter={toggleServicesDropdown}> {/* onMouseLeave={toggleFeaturesDropdown} */}
                                 <Link href="/Services" className="navItem">DỊCH VỤ</Link>
                                 <ul onMouseEnter={toggleServicesDropdown}
                                     onMouseLeave={closeServicesDropdown}
                                     className={`absolute ${showServicesDropdown ? 'block' : 'hidden'} bg-white shadow rounded-md mt-2 w-56`}>
-                                    <li><a href="#" className="navChildItem">CHĂM SÓC MỤN</a></li>
-                                    <li><a href="#" className="navChildItem">MESOTHERAPY</a></li>
-                                    <li><a href="#" className="navChildItem">DỊCH VỤ CHUYÊN SÂU (Chemical Peel)</a></li>
+                                    <li><Link href="./Services/meso" className="navChildItem">MESOTHERAPY</Link></li>
+                                    <li><Link href="./Services/peel" className="navChildItem">DỊCH VỤ CHUYÊN SÂU (Chemical Peel)</Link></li>
+                                    <li><Link href="./Services/dieutrimun" className="navChildItem">CHĂM SÓC MỤN</Link></li>
                                 </ul>
                             </div>
                             <div className="relative content-center" onMouseEnter={toggleProductsDropdown} > {/* onMouseLeave={toggleFeaturesDropdown} */}
