@@ -1,18 +1,12 @@
 import React from 'react'
 import { AboutContent } from '../components/content'
+import HeaderPage from '../components/HeaderPage'
 
 const page = () => {
   return (
     <>
       {/* Header */}
-      <div className='relative w-full h-[350px] '>
-        <div className='absolute w-full h-[350px] '>
-          <img src='/bg/about.jpg' className='h-full w-full' />
-        </div>
-        <div className='relative w-full h-full text-center content-end pb-10 select-none'>
-          <span className='font-gvibes text-[80px] text-pink-600 '>Về Thi Thi Beauty Spa</span>
-        </div>
-      </div>
+      <HeaderPage title={'Về Thi Thi Beauty Spa'} font={'font-gvibes'} about={true} />
 
       {/* About */}
       <div className='pageChild h-fit'>

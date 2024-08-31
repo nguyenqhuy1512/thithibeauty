@@ -67,9 +67,9 @@ const Navbar: React.FC = () => {
                                 <ul onMouseEnter={toggleServicesDropdown}
                                     onMouseLeave={closeServicesDropdown}
                                     className={`absolute ${showServicesDropdown ? 'block' : 'hidden'} bg-white shadow rounded-md mt-2 w-56`}>
-                                    <li><Link href="./Services/meso" className="navChildItem">MESOTHERAPY</Link></li>
-                                    <li><Link href="./Services/peel" className="navChildItem">DỊCH VỤ CHUYÊN SÂU (Chemical Peel)</Link></li>
-                                    <li><Link href="./Services/dieutrimun" className="navChildItem">CHĂM SÓC MỤN</Link></li>
+                                    <li><Link href="/Services?page=meso" className="navChildItem">MESOTHERAPY</Link></li>
+                                    <li><Link href="/Services?page=peel" className="navChildItem">DỊCH VỤ CHUYÊN SÂU (Chemical Peel)</Link></li>
+                                    <li><Link href="/Services?page=trimun" className="navChildItem">CHĂM SÓC MỤN</Link></li>
                                 </ul>
                             </div>
                             <div className="relative content-center" onMouseEnter={toggleProductsDropdown} > {/* onMouseLeave={toggleFeaturesDropdown} */}
