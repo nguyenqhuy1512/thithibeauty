@@ -80,6 +80,17 @@ body {
     text-wrap: balance;
   }
 
+  .fade-in {
+    @apply opacity-0; /* Start hidden */
+    animation: fadeIn 0.5s forwards; /* Animation for fade-in */
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1; /* End fully visible */
+    }
+  }
+
 }
 
 

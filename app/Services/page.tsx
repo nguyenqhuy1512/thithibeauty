@@ -2,24 +2,25 @@
 import React, { useEffect } from 'react'
 import HeaderPage from '../components/HeaderPage'
 import { ServicesContent } from '../components/content'
-
+import { useSearchParams  } from 'next/navigation';
 
 const page = () => {
-
-  // Retrieve the variable
-  const pageStr: string | null = new URLSearchParams(window.location.search).get('page');
+  const searchParams = useSearchParams();
+  const strPage = searchParams.get('page'); 
 
   useEffect(() => {
-    switch (pageStr) {
+    switch (strPage) {
       case 'peel':
-        window.scrollTo(0, 1600);
+        window.scrollTo(0, 1550);
+        break;
       case 'trimun':
-        window.scrollTo(0, 2900);
+        window.scrollTo(0, 2850);
+        break;
       default:
         window.scrollTo(0, 0);
+        break;
     }
-
-  }, [pageStr]);
+  }, [strPage]);
 
   return (
     <>

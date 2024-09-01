@@ -698,3 +698,52 @@ export const ServicesContent = {
 
 
 }
+
+//Category
+export const Category = [
+    {
+        id:0,
+        title:"Hàng bán chạy nhất"
+    },
+    {
+        id:1,
+        title:"Khuyến mãi"
+    },
+    {
+        id:2,
+        title:"Mesotheraphy"
+    },
+    {
+        id:3,
+        title:"Mỹ phẩm Peel da "
+    },
+    {
+        id:4,
+        title:"Kem dưỡng da"
+    },
+    {
+        id:5,
+        title:"Sữa rữa mặt"
+    },
+]
+
+//ProductSlide
+export const ProductSlideList = [
+    {
+        id:0,
+        img:"/product/product-slide1.jpg",
+    },
+    {
+        id:1,
+        img:"/product/product-slide2.jpg",
+    },
+    {
+        id:2,
+        img:"/product/product-slide3.jpg",
+    },
+    {
+        id:3,
+        img:"/product/product-slide4.jpg",
+    },
+    
+]

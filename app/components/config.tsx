@@ -58,3 +58,14 @@ export const setFeedMb = {
     pauseOnHover: false,
     speed: 5000,
 };
+
+//Products
+export const setProductSlide = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnHover: false,
+    speed: 1000,
+};
