@@ -111,10 +111,10 @@ const page = () => {
       </div>
 
       <div className='pageChild pt-20 h-fit'>
-        <div className='relative h-fit w-full justify-center items-center bg-pink-200 pt-10 '>
+        <div className='relative h-fit w-full justify-center items-center  pt-10 '>
           <span className='flex text-pink-400 font-about text-4xl font-bold justify-center '>HÀNG BÁN CHẠY</span>
 
-          <div className='flex h-full w-full pl-[15%] pr-[15%] bg-pink-200'>
+          <div className='flex h-full w-full pl-[15%] pr-[15%] '>
             <div className='childContentR mt-10 mb-10  h-full w-full  rounded-lg'>
               <Slider {...setProd}>
                 {prodList.map((item) => (
@@ -134,10 +134,10 @@ const page = () => {
       </div>
 
       <div className='pageChild h-fit'>
-        <div className='relative h-fit w-full justify-center items-center bg-pink-200 pt-10 '>
+        <div className='relative h-fit w-full justify-center items-center pt-10 '>
           <span className='flex text-pink-400 font-about text-4xl font-bold justify-center '>HÀNG KHUYẾN MÃI</span>
 
-          <div className='flex h-full w-full pl-[15%] pr-[15%] bg-pink-200'>
+          <div className='flex h-full w-full pl-[15%] pr-[15%] '>
             <div className='childContentR mt-10 mb-10  h-full w-full  rounded-lg'>
               <Slider {...setProd}>
                 {prodList.map((item) => (

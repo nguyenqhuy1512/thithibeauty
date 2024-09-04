@@ -46,12 +46,12 @@ body {
     @apply relative w-full h-[80%] 
   }
   .homeTitle{
-    @apply font-bold xs:text-xl lg:text-4xl text-pink-400 font-about select-none
+    @apply font-bold xs:text-xl md:text-2xl lg:text-4xl text-pink-400 font-about select-none
   }
 
   /* navbar */
   .navItem{
-    @apply content-center text-pink-600 hover:text-pink-300 hover:underline font-bold text-xl font-about
+    @apply content-center text-pink-400 hover:text-pink-600 hover:underline font-bold lg:text-base xl:text-xl font-about
   }
   .navChildItem{
     @apply block px-4 py-2 hover:bg-pink-100 text-pink-600 font-about

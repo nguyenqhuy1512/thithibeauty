@@ -31,12 +31,12 @@ const page = () => {
           <span className='homeTitle'>
             THI THI BEAUTY
           </span>
-          <div className='flex h-auto w-full justify-center mt-5'>
-            <span className='w-fit xs:text-2xl lg:text-[36px] font-gvibes text-center'>Be Natural</span>
-            <span className='text-pink-600 xs:text-2xl lg:text-[40px] font-logo ml-5 mr-5'>♥</span>
-            <span className='w-fit xs:text-2xl lg:text-[36px] font-gvibes text-center'>Be Beautiful</span>
-            <span className='text-pink-600 xs:text-2xl lg:text-[40px] font-logo ml-5 mr-5'>♥</span>
-            <span className='w-fit xs:text-2xl lg:text-[36px] font-gvibes text-center'>Be You</span>
+          <div className='flex h-auto w-full justify-center xs:mt-2 xs:space-x-3 lg:mt-5'>
+            <span className='w-fit xs:text-xl md:text-[24px] lg:text-[36px] font-gvibes text-center'>Be Natural</span>
+            <span className='text-pink-600 xs:text-2xl lg:text-[40px] font-logo'>♥</span>
+            <span className='w-fit xs:text-xl md:text-[24px] lg:text-[36px] font-gvibes text-center'>Be Beautiful</span>
+            <span className='text-pink-600 xs:text-2xl lg:text-[40px] font-logo'>♥</span>
+            <span className='w-fit xs:text-xl md:text-[24px] lg:text-[36px] font-gvibes text-center'>Be You</span>
           </div>
         </div>
 

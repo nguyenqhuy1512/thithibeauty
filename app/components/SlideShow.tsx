@@ -27,7 +27,7 @@ interface ProductSlide {
 export const HomeSlide: React.FC<propsHomeSlide> = ({ img }) => {
   return (
     <>
-      <div className='relative w-screen xs:h-[300px] lg:h-screen'>
+      <div className='relative w-screen xs:h-[300px] md:h-[400px] lg:h-[600px] xl:h-screen'>
         <div className='flex w-full h-full'>
           <img className='w-full xs:[300px] lg:h-full'
             src={img}
