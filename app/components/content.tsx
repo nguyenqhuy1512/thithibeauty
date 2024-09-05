@@ -71,121 +71,25 @@ export const serviceData = [
         id: 0,
         img: "/icon/meso.svg",
         title: "MESOTHERAPHY",
-        content: {
-            imgItem: "/meso.jpg",
-            descript: () => {
-                return (
-                    <>
-                        <div className="xs:text-md lg:text-lg">
-                            <span className="font-semibold">💉 Mesotherapy là gì ? </span>
-                            <br />
-                            👉 Là phương pháp vàng trong làng trẻ hóa, phục hồi da
-                            bằng cách đưa trực tiếp các chất cần thiết cho da vào trung bì như HA, các loại Peptide, vitamin, enzyme, hormone...
-                            <br />
-                            <span className="font-semibold">❤️ Tác dụng của Mesotherapy ? </span>
-                            <br />
-                            ✅ Trẻ hóa và săn chắc da.<br />
-                            ✅ Làm sáng da.<br />
-                            ✅ Kích thích mọc tóc.<br />
-                            ✅ Điều trị sẹo rỗ.<br />
-                            ✅ Điều trị chứng tăng tiết mồ hôi.
-                            <br />
-                            <span className="font-semibold">💆 Mesotherapy phù hợp với ? </span>
-                            <br />
-                            🌿 Làn da mệt mỏi, sạm xỉn mất nước<br />
-                            🌿 Da yếu, tổn thương, cần phục hồi từ gốc<br />
-                            🌿 Da lão hoá nhẹ đến nhiều, xuất hiện nhăn li ti<br />
-                            🌿 Hay đơn giản làn da muốn được căng bóng khoẻ, ngậm nước, trong trẻo như sương mai từ tận gốc
-                            <br />
-                            <span className="font-semibold">⏳ Thời gian trị liệu :  </span>  2 – 4 tuần/lần( Duy trì từ 3 - 6 lần).
-                            <br />
-                        </div>
-                    </>
-                )
-
-            }
-        }
+        descript: "Mesotherapy là phương pháp vàng trong làng trẻ hóa, phục hồi da bằng cách đưa trực tiếp các chất cần thiết cho da "
+            + "vào trung bì như HA, các loại Peptide, vitamin, enzyme, hormone... Tại spa, phương pháp Meso được lựa chọn có nguồn gốc"
+            + "và phương thức đến từ nhiều nước ở Châu Âu - những nơi đã thành công và đạt được những kết quả nổi bật."
     },
     {
         id: 1,
         img: "/icon/Peel.svg",
         title: "CHEMICAL PEEL",
-        content: {
-            imgItem: "/peel.jpg",
-            descript: () => {
-                return (
-                    <>
-                        <div>
-                            <span className="font-semibold">👩 Chemical Peel (Peel da) là gì ? </span>
-                            <br />
-                            👉 Là một phương pháp tẩy tế bào chết trên da, hay gọi là tẩy tế bào chết hóa học với nồng độ cao.
-                            <br />
-                            <span className="font-semibold">❤️ Tác dụng của Chemical Peel (Peel da) ? </span>
-                            <br />
-                            ✅ Loại bỏ các tạp chất nằm sâu bên trong lỗ chân lông.<br />
-                            ✅ Loại bỏ các cồi mụn cùng bã nhờn và vi khuẩn gây mụn, làm thông thoáng và se khít lỗ chân lông.<br />
-                            ✅ Giúp làm giảm rõ rệt các tình trạng: nám da, sạm da, thâm mụn,...<br />
-                            ✅ Tăng khả năng đàn hồi da: giảm tình trạng xuất hiện nếp nhăn, chảy xệ,...<br />
-                            ✅ Rút ngắn chu kì tái tạo da, giúp bạn nhanh chóng có làn da khỏe mạnh.<br />
-                            ✅ Kích thích sự sản sinh Collagen và Elastin làm đầy các tổn thương và tăng độ đàn hồi.
-                            <br />
-                            <span className="font-semibold">💆 Chemical Peel (Peel da) phù hợp với ? </span>
-                            <br />
-                            🌿 Da có mụn ẩn, mụn viêm, mụn đầu đen<br />
-                            🌿 Da nhiều vết thâm, không đều màu.<br />
-                            🌿 Da thiếu sức sống, không căng bóng.<br />
-                            🌿 Da dầu, da khô, da hỗn hợp.<br />
-                            🌿 Da có lỗ chân lông to.<br />
-                            🌿 Da có tuyến bã nhờn hoạt động mạnh
-                            <br />
-                            <span className="font-semibold">⏳ Thời gian trị liệu :  </span>  Đạt kết quả sau 2 - 3 buổi.
-                            <br />
-                        </div>
-                    </>
-                )
-
-            }
-        }
+        descript: "Chemical Peel (Peel da) là một phương pháp tẩy tế bào chết trên da, hay gọi là tẩy tế bào chết hóa học với nồng độ cao."
+        +" Các hợp chất được sử dụng luôn được tư vấn và lựa chọn tùy thuộc vào làn da của khách hàng nhầm đảm bảo chất lượng lột bỏ và tái tạo "
+        +"một làn da mới. "
     },
     {
         id: 2,
         img: "/icon/trimun.svg",
         title: "CHĂM SÓC MỤN",
-        content: {
-            imgItem: "/trimun.jpg",
-            descript: () => {
-                return (
-                    <>
-                        <div>
-                            <span className="font-semibold">🌝 Điều trị và chăm sóc da mụn </span>
-                            <br />
-                            Quy trình chăm sóc da mụn theo chuẩn y khoa, bao gồm 12 bước:
-                            <br />
-                            👉 B1: Tẩy trang<br />
-                            👉 B2: Rửa mặt<br />
-                            👉 B3: Tẩy tế bào chết( tuỳ tình trạng da)<br />
-                            👉 B4: Xông hơi + hút dầu + cà da chết<br />
-                            👉 B5: Vệ sinh da và khử trùng dụng cụ<br />
-                            👉 B6: Lấy mụn chuẩn y khoa<br />
-                            👉 B7: Đi điện tím<br />
-                            👉 B8: Đắp mặt nạ<br />
-                            👉 B9: Bôi kháng sinh tại chỗ<br />
-                            👉 B10 Chiếu ánh sáng sinh học<br />
-                            👉 B11 Điện di máy lạnh<br />
-                            👉 B12: Tư vấn cách điều trị và chăm sóc da tại nhà<br />
-                            <span className="font-semibold">❤️ Kết quả điều trị </span>
-                            <br />
-                            ✅ Làm sạch và loại bỏ mụn trên da mặt.<br />
-                            ✅ Phục hồi và tái tạo lại vùng da bị mụn.<br />
-                            ✅ Bổ sung các dưỡng chất cần thiết cho việc phục hồi và dưỡng da.<br />
-                            ✅ Làm mờ đi các vết sẹo tạo ra bởi mụn.<br />
-                        </div>
-                    </>
-                )
-
-            }
-        }
-    },
+        descript: "Điều trị và chăm sóc da mụn tại spa luôn đảm bảo thực hiện theo quy trình chuẩn y khoa 12 bước. Sau liệu trình chăm sốc,"
+        +" làn da mặt được vệ sinh, loại bỏ hầu hết nhân mụn, sát khuẩn và bổ sung đầy đủ dưỡng chất để tái tạo mô da mới."
+    }
 ];
 
 export const slideFeed = [
@@ -281,6 +185,34 @@ export const prodList = [
     },
     {
         id: 4,
+        img: "/product/mp1.jpg",
+        title: "Serum AHOHWA",
+        price: "330.000",
+        sellPrice: "300.000",
+    },
+    {
+        id: 5,
+        img: "/product/mp1.jpg",
+        title: "Serum AHOHWA",
+        price: "330.000",
+        sellPrice: "300.000",
+    },
+    {
+        id: 6,
+        img: "/product/mp1.jpg",
+        title: "Serum AHOHWA",
+        price: "330.000",
+        sellPrice: "300.000",
+    },
+    {
+        id: 7,
+        img: "/product/mp1.jpg",
+        title: "Serum AHOHWA",
+        price: "330.000",
+        sellPrice: "300.000",
+    },
+    {
+        id: 8,
         img: "/product/mp1.jpg",
         title: "Serum AHOHWA",
         price: "330.000",
@@ -630,26 +562,26 @@ export const ServicesContent = {
                             <span className="font-semibold font-about">Điều trị và chăm sóc da mụn </span>
                             <br />
                             <span className="font-about">
-                            Quy trình chăm sóc da mụn theo chuẩn y khoa, bao gồm 12 bước:
-                            <br />
-                            &nbsp;&nbsp;&nbsp; B1: Tẩy trang<br />
-                            &nbsp;&nbsp;&nbsp; B2: Rửa mặt<br />
-                            &nbsp;&nbsp;&nbsp; B3: Tẩy tế bào chết( tuỳ tình trạng da)<br />
-                            &nbsp;&nbsp;&nbsp; B4: Xông hơi + hút dầu + cà da chết<br />
-                            &nbsp;&nbsp;&nbsp; B5: Vệ sinh da và khử trùng dụng cụ<br />
-                            &nbsp;&nbsp;&nbsp; B6: Lấy mụn chuẩn y khoa<br />
-                            &nbsp;&nbsp;&nbsp; B7: Đi điện tím<br />
-                            &nbsp;&nbsp;&nbsp; B8: Đắp mặt nạ<br />
-                            &nbsp;&nbsp;&nbsp; B9: Bôi kháng sinh tại chỗ<br />
-                            &nbsp;&nbsp;&nbsp; B10: Chiếu ánh sáng sinh học<br />
-                            &nbsp;&nbsp;&nbsp; B11: Điện di máy lạnh<br />
-                            &nbsp;&nbsp;&nbsp; B12: Tư vấn cách điều trị và chăm sóc da tại nhà<br />
-                            <span className="font-semibold">Kết quả điều trị </span>
-                            <br />
-                            Làm sạch và loại bỏ mụn trên da mặt.<br />
-                            Phục hồi và tái tạo lại vùng da bị mụn.<br />
-                            Bổ sung các dưỡng chất cần thiết cho việc phục hồi và dưỡng da.<br />
-                            Làm mờ đi các vết sẹo tạo ra bởi mụn.<br />
+                                Quy trình chăm sóc da mụn theo chuẩn y khoa, bao gồm 12 bước:
+                                <br />
+                                &nbsp;&nbsp;&nbsp; B1: Tẩy trang<br />
+                                &nbsp;&nbsp;&nbsp; B2: Rửa mặt<br />
+                                &nbsp;&nbsp;&nbsp; B3: Tẩy tế bào chết( tuỳ tình trạng da)<br />
+                                &nbsp;&nbsp;&nbsp; B4: Xông hơi + hút dầu + cà da chết<br />
+                                &nbsp;&nbsp;&nbsp; B5: Vệ sinh da và khử trùng dụng cụ<br />
+                                &nbsp;&nbsp;&nbsp; B6: Lấy mụn chuẩn y khoa<br />
+                                &nbsp;&nbsp;&nbsp; B7: Đi điện tím<br />
+                                &nbsp;&nbsp;&nbsp; B8: Đắp mặt nạ<br />
+                                &nbsp;&nbsp;&nbsp; B9: Bôi kháng sinh tại chỗ<br />
+                                &nbsp;&nbsp;&nbsp; B10: Chiếu ánh sáng sinh học<br />
+                                &nbsp;&nbsp;&nbsp; B11: Điện di máy lạnh<br />
+                                &nbsp;&nbsp;&nbsp; B12: Tư vấn cách điều trị và chăm sóc da tại nhà<br />
+                                <span className="font-semibold">Kết quả điều trị </span>
+                                <br />
+                                Làm sạch và loại bỏ mụn trên da mặt.<br />
+                                Phục hồi và tái tạo lại vùng da bị mụn.<br />
+                                Bổ sung các dưỡng chất cần thiết cho việc phục hồi và dưỡng da.<br />
+                                Làm mờ đi các vết sẹo tạo ra bởi mụn.<br />
                             </span>
                         </div>
                     </>
@@ -702,48 +634,48 @@ export const ServicesContent = {
 //Category
 export const Category = [
     {
-        id:0,
-        title:"Hàng bán chạy nhất"
+        id: 0,
+        title: "Hàng bán chạy nhất"
     },
     {
-        id:1,
-        title:"Khuyến mãi"
+        id: 1,
+        title: "Khuyến mãi"
     },
     {
-        id:2,
-        title:"Mesotheraphy"
+        id: 2,
+        title: "Mesotheraphy"
     },
     {
-        id:3,
-        title:"Mỹ phẩm Peel da "
+        id: 3,
+        title: "Mỹ phẩm Peel da "
     },
     {
-        id:4,
-        title:"Kem dưỡng da"
+        id: 4,
+        title: "Kem dưỡng da"
     },
     {
-        id:5,
-        title:"Sữa rữa mặt"
+        id: 5,
+        title: "Sữa rữa mặt"
     },
 ]
 
 //ProductSlide
 export const ProductSlideList = [
     {
-        id:0,
-        img:"/product/product-slide1.jpg",
+        id: 0,
+        img: "/product/product-slide1.jpg",
     },
     {
-        id:1,
-        img:"/product/product-slide2.jpg",
+        id: 1,
+        img: "/product/product-slide2.jpg",
     },
     {
-        id:2,
-        img:"/product/product-slide3.jpg",
+        id: 2,
+        img: "/product/product-slide3.jpg",
     },
     {
-        id:3,
-        img:"/product/product-slide4.jpg",
+        id: 3,
+        img: "/product/product-slide4.jpg",
     },
-    
+
 ]

@@ -22,7 +22,7 @@ export const setAbout = {
 export const setProd = {
     dots: true,
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
     pauseOnHover: false,

@@ -31,7 +31,7 @@ body {
 @layer components {
   /* homepage */
   .homeChild{
-    @apply relative w-screen h-fit 
+    @apply relative w-screen h-fit pl-[15%] pr-[15%]
   }
   .pageChild{
     @apply relative w-screen h-screen
@@ -40,7 +40,7 @@ body {
     @apply relative w-full xs:h-[10%] xs:pt-5 lg:h-[20%] lg:pt-10 content-center text-center justify-center
   }
   .childContent{
-    @apply xs:flex-grow lg:flex w-full xs:h-[90%] lg:h-[80%]
+    @apply xs:flex-grow md:flex w-full xs:h-[90%] md:h-[80%]
   }
   .childContentR{
     @apply relative w-full h-[80%] 
@@ -57,7 +57,7 @@ body {
     @apply block px-4 py-2 hover:bg-pink-100 text-pink-600 font-about
   }
   .mbNavItem{
-    @apply text-pink-600 hover:text-pink-300 hover:underline hover:ml-5 font-bold duration-300
+    @apply text-pink-600 hover:text-pink-300 hover:underline hover:ml-5 font-bold duration-300 font-about
   }
 
   /* footer */
@@ -70,8 +70,11 @@ body {
   }
 
   .fontSzCont{
-    @apply xs:text-lg lg:text-xl font-service
+    @apply xs:text-base md:text-lg lg:text-xl font-about
   }
+
+
+
   
 }
 

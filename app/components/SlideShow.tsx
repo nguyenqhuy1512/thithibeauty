@@ -44,7 +44,7 @@ export const AboutSlide: React.FC<propsAboutSlide> = ({ img }) => {
   return (
     <>
       <div className='xs:flex lg:relative w-full h-full xs:p-2 lg:p-4 rounded-2xl bg-white'>
-        <img className='relative w-full xs:h-[300px] lg:h-[610px] border-l-2 border-gray-200 rounded-2xl'
+        <img className='relative w-full xs:h-[300px] md:h-[400px] lg:h-[600px] border-l-2 border-gray-200 rounded-2xl'
           src={img}
           alt="banner" />
       </div>
@@ -69,19 +69,22 @@ export const FeedSlide: React.FC<propsFeedlide> = ({ img }) => {
 export const ProductSlide: React.FC<propsProdSlide> = ({ img, title, price, sellPrice }) => {
   return (
     <>
-      <div className='flex-grow w-auto h-[500px] xs:p-10 lg:p-5 border-2 border-gray-100 rounded-lg ml-3 cursor-pointer'>
+      <div className='flex-grow w-[200px] h-[300px] p-2 border-2 border-gray-100 rounded-lg cursor-pointer'>
+
         <div className='flex h-5/6 overflow-hidden'>
           <img src={img} className='w-full h-auto rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:shadow-2xl shadow-gray-600' />
         </div>
+
         <div className='flex-grow h-1/6'>
-          <div className='flex h-1/2 justify-center content-center'>
-            <span className='text-lg '>{title}</span>
+          <div className='flex h-1/2 justify-start'>
+            <span className='xs:text-sm md:text-base'>{title}</span>
           </div>
-          <div className='flex h-1/2 justify-center content-center space-x-5'>
-            <span className='line-through'>{price} VNĐ</span>
-            <span className='text-red-500 '>{sellPrice} VNĐ</span>
+          <div className='flex h-1/2 justify-start'>
+            <span className='xs:text-sm md:text-base text-red-500 mr-5'>{sellPrice}đ</span>
+            <span className='xs:text-sm md:text-base line-through'>{price}đ</span>
           </div>
         </div>
+
       </div>
     </>
   )
