@@ -2,7 +2,7 @@ import Homepage from '@/app/Homepage/page'
 
 export default function Home() {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       <Homepage />
     </main>
   );

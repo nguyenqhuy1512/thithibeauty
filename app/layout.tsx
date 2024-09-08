@@ -26,14 +26,14 @@ export default function RootLayout({
   return (
 
     <html lang='en'>
-      <body className='relative'>
+      <body className='relative '>
         <div className="z-20 relative">
           <Navbar />
         </div>
         <div className="z-10">
           {children}
         </div>
-        <div className="z-14">
+        <div className="z-14 overflow-x-hidden">
           <Footer />
         </div>
       </body>

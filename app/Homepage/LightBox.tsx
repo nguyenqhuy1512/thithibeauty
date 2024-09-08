@@ -47,7 +47,7 @@ const LightboxGallery: React.FC<propLightBoxs> = ({ images }: propLightBoxs) => 
 
     return (
         <div>
-            <div className="grid xs:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4 p-10">
+            <div className="grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row gap-4 p-10">
                 {images.map((item) => (
                     <div key={item.id} className='relative w-full h-full overflow-hidden'>
                         <img onClick={() => {

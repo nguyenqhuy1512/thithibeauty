@@ -24,81 +24,119 @@ body {
   /* padding: 1rem; */
 }
 
-@layer base{
-
-}
+@layer base {}
 
 @layer components {
+
   /* homepage */
-  .homeChild{
-    @apply relative w-screen h-fit pl-[15%] pr-[15%]
+  .homeChild {
+    @apply relative w-full h-fit xs:pl-5 xs:pr-5 md:pl-10 md:pr-10
   }
-  .pageChild{
+
+  /* all content in web */
+  .txtSzBase {
+    @apply xs:text-xs md:text-sm lg:text-base xl:text-lg font-Lora
+  }
+
+  /* all content in web */
+  .txtSzBaseTt {
+    @apply xs:text-sm md:text-lg lg:text-xl xl:text-2xl font-Lora
+  }
+
+  /* all special notice in web */
+  .txtSzBaseSpec {
+    @apply xs:text-2xl lg:text-3xl text-pink-400 font-GVibes font-semibold
+  }
+
+
+
+
+
+
+
+
+
+  .pageChild {
     @apply relative w-screen h-screen
   }
-  .childTitle{
+
+  .childTitle {
     @apply relative w-full xs:h-[10%] xs:pt-5 lg:h-[20%] lg:pt-10 content-center text-center justify-center
   }
-  .childContent{
+
+  .childContent {
     @apply xs:flex-grow md:flex w-full xs:h-[90%] md:h-[80%]
   }
-  .childContentR{
-    @apply relative w-full h-[80%] 
+
+  .childContentR {
+    @apply relative w-full h-[80%]
   }
-  .homeTitle{
-    @apply font-bold xs:text-xl md:text-2xl lg:text-4xl text-pink-400 font-about select-none
+
+  .homeTitle {
+    @apply font-bold xs:text-xl md:text-2xl lg:text-4xl text-pink-400 font-Lora select-none
   }
 
   /* navbar */
-  .navItem{
-    @apply content-center text-pink-400 hover:text-pink-600 hover:underline font-bold lg:text-base xl:text-xl font-about
+  .navItem {
+    @apply text-pink-400 hover:text-pink-600 hover:underline font-bold lg:text-base xl:text-xl font-Lora
   }
-  .navChildItem{
-    @apply block px-4 py-2 hover:bg-pink-100 text-pink-600 font-about
+
+  .navChildItem {
+    @apply block px-4 py-2 hover:bg-pink-100 text-pink-600 font-Lora
   }
-  .mbNavItem{
-    @apply text-pink-600 hover:text-pink-300 hover:underline hover:ml-5 font-bold duration-300 font-about
+
+  .mbNavItem {
+    @apply text-pink-600 hover:text-pink-300 hover:underline hover:ml-5 font-bold duration-300 font-Lora
   }
 
   /* footer */
-  .infoTxt{
-    @apply text-pink-600 text-xl hover:text-blue-600 hover:ml-5 hover:underline duration-300 font-service
+  .infoTxt {
+    @apply text-pink-600 xs:text-sm lg:text-lg hover:text-blue-600 hover:ml-5 hover:underline duration-300 font-Lora
   }
 
-  .fontSzTitle{
+  .fontSzTitle {
     @apply xs:text-xl lg:text-2xl font-service font-semibold
   }
 
-  .fontSzCont{
-    @apply xs:text-base md:text-lg lg:text-xl font-about
+  .fontSzCont {
+    @apply xs:text-base md:text-lg lg:text-xl font-Lora
   }
 
+  /* services */
+  .fontSzTitleService {
+    @apply xs:text-xl lg:text-3xl font-Cormorant font-semibold
+  }
 
-
-  
+  .imgService {
+    @apply xs:h-[300px] sm:h-[300px] md:h-[300px] lg:h-[600px]
+  }
 }
 
 @layer utilities {
+  .html {
+    overflow-x: hidden !important;
+  }
+
+  .body {
+    overflow-x: hidden !important;
+  }
+
   .text-balance {
     text-wrap: balance;
   }
 
   .fade-in {
-    @apply opacity-0; /* Start hidden */
-    animation: fadeIn 0.5s forwards; /* Animation for fade-in */
+    @apply opacity-0;
+    /* Start hidden */
+    animation: fadeIn 0.5s forwards;
+    /* Animation for fade-in */
   }
 
   @keyframes fadeIn {
     to {
-      opacity: 1; /* End fully visible */
+      opacity: 1;
+      /* End fully visible */
     }
   }
 
 }
-
-
-
-
- 
-
-

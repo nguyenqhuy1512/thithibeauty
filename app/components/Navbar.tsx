@@ -50,8 +50,8 @@ const Navbar: React.FC = () => {
 
     return (
         <>
-            <nav className="bg-transparent">
-                <div ref={stickyElementRef} className={`h-auto w-full top-0 ${scrollY > 20 || showMobileMenu ? `fixed transition ease-in-out duration-700 bg-white` : `absolute`}`}>
+            <nav className="bg-transparent w-[110%]">
+                <div ref={stickyElementRef} className={`h-auto w-[100%] top-0 ${scrollY > 20 || showMobileMenu ? `fixed transition ease-in-out duration-700 bg-white` : `absolute`}`}>
                     <div className="flex xs:justify-start md:justify-center hover:bg-white transition ease-in-out duration-700">
 
 
@@ -85,17 +85,17 @@ const Navbar: React.FC = () => {
                             <Link href="/Library" className="navItem">THƯ VIỆN</Link>
                             <Link href="/Discount" className="navItem">ƯU ĐÃI</Link>
                             <Link href="/Contact" className="navItem">LIÊN HỆ</Link>
-                            <Link href="/WorkingDay" className="group btn bg-pink-200 text-pink-600 hover:text-white border-none hover:bg-pink-600 font-bold lg:text-base xl:text-xl font-about" >
+                            <Link href="/WorkingDay" className="group btn bg-pink-200 text-pink-600 hover:text-white border-none hover:bg-pink-600 font-bold lg:text-base xl:text-xl font-Lora" >
                                 ĐẶT LỊCH
                                 <BellIc />
                             </Link>
                         </div>
 
 
-                        <div className="flex lg:hidden w-full ">
+                        <div className="flex lg:hidden w-full border-none">
                             <label className="btn swap swap-rotate bg-transparent hover:bg-transparent border-none">
                                 {/* this hidden checkbox controls the state */}
-                                <input type="checkbox" onClick={toggleMobileMenu} />
+                                <input type="checkbox" onClick={toggleMobileMenu} className=' border-none'/>
 
                                 {/* hamburger icon */}
                                 <ToggleIc />
@@ -114,10 +114,10 @@ const Navbar: React.FC = () => {
 
                     <div className={`${showMobileMenu ? 'block' : 'hidden'} bg-gradient-to-b from-pink-50 to-pink-300 shadow-md`}>
                         <div className="container mx-auto px-4 py-3 flex flex-col space-y-4 justify-center items-center">
-                            <a href="#" className="mbNavItem">TRANG CHỦ</a>
-                            <a href="#" className="mbNavItem">GIỚI THIỆU</a>
-                            <a href="#" className="mbNavItem">DỊCH VỤ</a>
-                            <a href="#" className="mbNavItem">SẢN PHẨM</a>
+                            <a href="/" className="mbNavItem">TRANG CHỦ</a>
+                            <a href="/about" className="mbNavItem">GIỚI THIỆU</a>
+                            <a href="/Services" className="mbNavItem">DỊCH VỤ</a>
+                            <a href="/Products" className="mbNavItem">SẢN PHẨM</a>
                             <a href="#" className="mbNavItem">THƯ VIỆN</a>
                             <a href="#" className="mbNavItem">KHUYẾN MÃI</a>
                             <a href="#" className="mbNavItem">LIÊN LẠC</a>

@@ -1,25 +1,23 @@
 import React from 'react'
-import logo from './logo'
+import Logo from './logo'
+import { MapIc, PhoneIc } from './icon'
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-pink-200 to-pink-100  xs:h-fit lg:h-[400px] ">
-      <div className='xs:flex-grow lg:flex h-full w-full xs:p-5 lg:pl-[10%] lg:pr-[10%]'>
+    <footer className="bg-gradient-to-r from-pink-200 to-pink-100 w-full xs:h-fit lg:h-[400px] ">
 
-
-
-        <div className='flex justify-center items-center xs:h-1/4 xs:w-full lg:h-full lg:w-1/6'>
-          <div className='flex xs:h-[100px] xs:w-[100px] lg:h-[170px] lg:w-[170px] items-center bg-white rounded-full p-5'>
-            {logo()}
+      <div className='xs:flex-grow lg:flex h-full w-full xs:p-5 lg:pl-10 lg:pr-10 xl:pl-[10%] xl:pr-[10%]'>
+        <div className='flex justify-center items-center xs:h-1/4 xs:w-full lg:h-full lg:w-1/6 '>
+          <div className='flex xs:h-[130px] xs:w-[130px] lg:h-[170px] lg:w-[170px] justify-center items-center bg-white rounded-full p-5'>
+            <Logo />
           </div>
         </div>
 
-
-
-
-        <div className='flex-grow xs:h-1/6 xs:w-full lg:h-full lg:w-1/6 lg:text-center xs:p-5 lg:p-10'>
-          <h3 className="xs:text-lg lg:text-2xl font-semibold text-pink-600 xs:ml-5 lg:ml-0 mb-4 font-about">THÔNG TIN</h3>
-          <ul className="text-sm space-y-2 text-start ml-7">
+        <div className='flex-grow xs:h-1/6 xs:w-full xs:p-5 xs:ml-[20%]
+                       lg:h-full lg:w-1/6 lg:text-center lg:p-0 
+                       2xl:pt-10 '>
+          <h3 className="navItem text-pink-600 xs:ml-5 lg:ml-0 mb-4 ">THÔNG TIN</h3>
+          <ul className="text-sm space-y-2 text-start xs:pl-8 pl-14">
             <li><a href="#" className="infoTxt">Trang chủ</a></li>
             <li><a href="#" className="infoTxt">Giới thiệu</a></li>
             <li><a href="#" className="infoTxt">Dịch vụ</a></li>
@@ -29,9 +27,10 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className='flex-grow xs:h-1/6 xs:w-full lg:h-full lg:w-1/6 lg:text-center xs:p-5 lg:p-10'>
-          <h3 className="xs:text-lg lg:text-2xl font-semibold text-pink-600 xs:ml-5 mb-4 font-about">LIỆU TRÌNH</h3>
-          <ul className="text-gray-400 text-sm space-y-2 text-start ml-7">
+        <div className='flex-grow xs:h-1/6 xs:w-full xs:p-5 xs:ml-[20%]
+                      lg:h-full lg:w-1/6 lg:text-center lg:p-0 2xl:pt-10 '>
+          <h3 className="navItem font-semibold text-pink-600 xs:ml-5 mb-4">LIỆU TRÌNH</h3>
+          <ul className="text-gray-400 text-sm space-y-2 text-start xs:pl-8 pl-14">
             <li><a href="#" className="infoTxt">Mesotheraphy</a></li>
             <li><a href="#" className="infoTxt">Chemical Peel</a></li>
             <li><a href="#" className="infoTxt">Chăm sóc mụn</a></li>
@@ -39,26 +38,26 @@ const Footer = () => {
         </div>
 
 
-        <div className='flex xs:h-2/5 xs:w-full lg:h-full lg:w-3/6 xs:p-5 lg:p-0 lg:pt-10'>
+        <div className='flex xs:h-2/5 xs:w-full lg:h-full lg:w-3/6 lg:p-0 2xl:pt-10'>
           <div className='flex-grow h-full w-full lg:text-center lg:p-0'>
-            <h3 className="xs:text-lg lg:text-2xl font-semibold text-pink-600 xs:ml-5 lg:ml-0 xs:mr-0 lg:mr-28 mb-4 font-about">LIÊN HỆ</h3>
+            <h3 className="navItem text-pink-600 xs:ml-5 xs:mr-0 xs:pl-[25%] lg:ml-0 lg:mr-28 mb-4 ">LIÊN HỆ</h3>
             <ul className="text-gray-400 text-sm">
               <li className='flex'>
-                <div className='flex h-12 pl-5'>
-                  <img src='./icon/location.png' className='flex w-7 h-7' />
-                  <span className='flex ml-2 text-pink-600 xs:text-md lg:text-xl font-about'>133 Đường 19/4 - P.Xuân An - TP.Phan Thiết - T.Bình Thuận</span>
+                <div className='flex h-12 pl-5 text-center'>
+                  <MapIc />
+                  <span className='flex ml-2 infoTxt'>133 Đường 19/4 - P.Xuân An - TP.Phan Thiết - T.Bình Thuận</span>
                 </div>
               </li>
-              <li className='flex xs:mt-5 lg:mt-0'>
+              <li className='flex lg:mt-0'>
                 <div className='flex rounded-full h-12 pl-5 pr-5 '>
-                  <img src='./icon/phone.png' className='flex w-10 h-10' />
-                  <span className='flex ml-2 text-pink-600 font-bold xs:text-lg lg:text-3xl font-about'>0971 781 276</span>
+                  <PhoneIc />
+                  <span className='flex ml-2 text-pink-600 font-bold xs:text-lg lg:text-3xl font-Lora'>0971 781 276</span>
                 </div>
               </li>
 
 
               <li className='flex ml-5 mt-2'>
-                <div className='flex  space-x-2 ' >
+                <div className='flex space-x-2 xs:pl-[20%]' >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="facebook" className='w-10 h-10'>
                     <path fill="#1877f2" d="M1024,512C1024,229.23016,794.76978,0,512,0S0,229.23016,0,512c0,255.554,187.231,467.37012,432,505.77777V660H302V512H432V399.2C432,270.87982,508.43854,200,625.38922,200,681.40765,200,740,210,740,210V336H675.43713C611.83508,336,592,375.46667,592,415.95728V512H734L711.3,660H592v357.77777C836.769,979.37012,1024,767.554,1024,512Z"></path><path fill="#fff" d="M711.3,660,734,512H592V415.95728C592,375.46667,611.83508,336,675.43713,336H740V210s-58.59235-10-114.61078-10C508.43854,200,432,270.87982,432,399.2V512H302V660H432v357.77777a517.39619,517.39619,0,0,0,160,0V660Z">
                     </path>
@@ -74,13 +73,9 @@ const Footer = () => {
           </div>
         </div>
 
-
-
-
-
       </div>
       <div className='flex w-full h-[50px] bg-pink-50 justify-center items-center'>
-        <span className='text-black'>Copyright © Thi Thi Beauty</span>
+        <span className='text-black txtSzBase'>Copyright © Thi Thi Beauty</span>
       </div>
     </footer>
 

@@ -23,11 +23,11 @@ const config: Config = {
       },
     },
     fontFamily:{
-      logo : ['Grey Qo'],
-      about : ['Lora'],
-      service: ['Cormorant'],
-      child: ['Allura'],
-      gvibes: ['Great Vibes'],
+      Grey : ['Grey Qo'],
+      Lora : ['Lora'],
+      Cormorant: ['Cormorant'],
+      Allura: ['Allura'],
+      GVibes: ['Great Vibes'],
     }
 
 

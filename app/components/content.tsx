@@ -31,15 +31,15 @@ export const aboutInfo = () => {
     return (
         <>
             <div>
-                <span className="xs:text-2xl lg:text-3xl text-pink-400 font-gvibes font-semibold ">
-                    &nbsp;&nbsp;&nbsp;&nbsp;Thi Thi Beauty <span className="xs:text-2xl lg:text-3xl text-black font-gvibes ">Spa</span>&nbsp;
-                </span>
-                <span className="xs:text-md lg:text-lg font-about">
+                <span className="txtSzBaseSpec">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Thi Thi Beauty Spa
+                </span>&nbsp;
+                <span className="txtSzBase">
                     tự hào là địa chỉ hàng đầu về dịch vụ chăm sóc da mặt chuyên nghiệp tại <span className="font-semibold">Phan Thiết - Bình Thuận</span>.
                     <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Với phương châm lấy nụ cười của khách hàng làm động lực, spa luôn cố gắng, tận tình mang đến cho quý khách
                     những trải nghiệm tuyệt vời và kết quả chăm sóc da vượt trội.
-                    <br /><br />
+                    <br />
                     Các dịch vụ chăm sóc da mặt của Spa bao gồm:
                     <br />
                     &nbsp;&nbsp;&nbsp; <span className="font-semibold"><span className="text-pink-600">♣ Mesotherapy</span> </span>&nbsp;(phương pháp tiêm vitamin, enzyme, hormone,...)
@@ -47,7 +47,7 @@ export const aboutInfo = () => {
                     &nbsp;&nbsp;&nbsp; <span className="font-semibold"><span className="text-pink-600">♣ Peel</span></span>&nbsp;(phương pháp chăm sóc da chuyên sâu bằng hợp chất hóa học)
                     <br />
                     &nbsp;&nbsp;&nbsp; <span className="font-semibold"><span className="text-pink-600">♣ Chăm sóc da mụn</span> từ cơ bản đến chuyên sâu.</span>
-                    <br /><br />
+                    <br />
 
                     &nbsp;&nbsp;&nbsp;Không chỉ cung cấp các dịch vụ chăm sóc da chuyên sâu, tại Spa còn đề cao tinh thần phục vụ khách hàng một cách chu đáo, ân cần thông qua
                     những buổi trị liệu da mặt. Khách hàng đến với Spa chúng em luôn được quan tâm, tư vấn và chăm sóc từ lúc bắt đầu các liệu trình đến khi
@@ -70,7 +70,7 @@ export const serviceData = [
     {
         id: 0,
         img: "/icon/meso.svg",
-        title: "MESOTHERAPHY",
+        title: "Mesotheraphy",
         descript: "Mesotherapy là phương pháp vàng trong làng trẻ hóa, phục hồi da bằng cách đưa trực tiếp các chất cần thiết cho da "
             + "vào trung bì như HA, các loại Peptide, vitamin, enzyme, hormone... Tại spa, phương pháp Meso được lựa chọn có nguồn gốc"
             + "và phương thức đến từ nhiều nước ở Châu Âu - những nơi đã thành công và đạt được những kết quả nổi bật."
@@ -78,7 +78,7 @@ export const serviceData = [
     {
         id: 1,
         img: "/icon/Peel.svg",
-        title: "CHEMICAL PEEL",
+        title: "Chemical Peel",
         descript: "Chemical Peel (Peel da) là một phương pháp tẩy tế bào chết trên da, hay gọi là tẩy tế bào chết hóa học với nồng độ cao."
         +" Các hợp chất được sử dụng luôn được tư vấn và lựa chọn tùy thuộc vào làn da của khách hàng nhầm đảm bảo chất lượng lột bỏ và tái tạo "
         +"một làn da mới. "
@@ -86,10 +86,10 @@ export const serviceData = [
     {
         id: 2,
         img: "/icon/trimun.svg",
-        title: "CHĂM SÓC MỤN",
+        title: "Chăm sóc mụn",
         descript: "Điều trị và chăm sóc da mụn tại spa luôn đảm bảo thực hiện theo quy trình chuẩn y khoa 12 bước. Sau liệu trình chăm sốc,"
         +" làn da mặt được vệ sinh, loại bỏ hầu hết nhân mụn, sát khuẩn và bổ sung đầy đủ dưỡng chất để tái tạo mô da mới."
-    }
+    },
 ];
 
 export const slideFeed = [
@@ -149,6 +149,16 @@ export const brandNmList = [
     },
     {
         id: 6,
+        img: "/brand/eucerin.png",
+        brandNm: "Eucerin",
+    },
+    {
+        id: 7,
+        img: "/brand/eucerin.png",
+        brandNm: "Eucerin",
+    },
+    {
+        id: 8,
         img: "/brand/eucerin.png",
         brandNm: "Eucerin",
     },
@@ -291,10 +301,10 @@ export const AboutContent = {
                     <span className="text-2xl font-service text-pink-800">
                         Kính chào quý khách đã đến với <span className="font-semibold text-3xl font-gvibes">Thi Thi Beauty Spa </span>.
                         <br />
-                        Một chiếc Spa tuy nhỏ nhỏ xinh xinh nhưng chứa đựng bên trong là niềm đam mê làm đẹp vô cùng to lớn cũng như mong muốn
+                        Một chiếc Spa tuy nhỏ nhỏ xinh xinh nhưng chứa đựng bên trong là một niềm đam mê làm đẹp vô cùng to lớn cũng như mong muốn
                         mang lại những trãi nghiệm chăm sóc da chất lượng và uy tín nhất dành cho quý khách.
                         <br />
-                        Spa bên em luôn đặt sự chu đáo, tận tình và tỉ mỉ lên hàng đầu, cùng với những dịch vụ chăm sóc hiệu quả, trang thiết bị
+                        Spa luôn đặt sự chu đáo, tận tình và tỉ mỉ lên hàng đầu, cùng với những dịch vụ chăm sóc hiệu quả, trang thiết bị
                         hiện đại và các dòng mỹ phẩm tốt nhất để tiếp đón và phục vụ quý khách hàng.
                         <br />
                         Spa luôn mong muốn được lắng nghe và đồng hành cùng quý khách trên suốt hành trình làm đẹp và chăm sóc làn da của mình...
@@ -347,18 +357,19 @@ export const AboutContent = {
 
 
 //ServicesPage
-export const ServicesContent = {
-    meso: {
-        title: () => { return (<div><span className="font-about text-yellow-500 lg:text-3xl">MESOTHERAPHY</span></div>) },
+export const ServicesContent = [
+    {
+        id:0,
+        title: "MESOTHERAPHY",
         img: ['/sv-meso1.jpeg', 'sv-meso2.jpg'],
         content: {
             info: () => {
                 return (
                     <>
-                        <div className="xs:text-md lg:text-lg">
-                            <span className="font-semibold font-about">Mesotherapy là gì ? </span>
+                        <div>
+                            <span className="font-semibold">Mesotherapy là gì ? </span>
                             <br />
-                            <span className="font-about">
+                            <span>
                                 Là phương pháp vàng trong làng trẻ hóa, phục hồi da
                                 bằng cách đưa trực tiếp các chất cần thiết cho da vào trung bì như HA, các loại Peptide, vitamin, enzyme, hormone...
                                 <br />
@@ -463,8 +474,9 @@ export const ServicesContent = {
             ]
         }
     },
-    peel: {
-        title: () => { return (<div><span className="font-about text-yellow-500 lg:text-3xl">Chemical Peel (Peel da)</span></div>) },
+    {
+        id:1,
+        title: "Chemical Peel (Peel da)",
         img: ['/sv-peel.jpg', 'sv-meso2.jpg'],
         content: {
             info: () => {
@@ -551,8 +563,9 @@ export const ServicesContent = {
             ]
         }
     },
-    trimun: {
-        title: () => { return (<div><span className="font-about text-yellow-500 lg:text-3xl">Chăm sóc mụn từ cơ bản đến chuyên sâu</span></div>) },
+    {
+        id:2,
+        title: "Chăm sóc mụn từ cơ bản đến chuyên sâu",
         img: ['/sv-trimun.jpg', 'sv-meso2.jpg'],
         content: {
             info: () => {
@@ -627,9 +640,9 @@ export const ServicesContent = {
             ]
         }
     }
+]
 
 
-}
 
 //Category
 export const Category = [

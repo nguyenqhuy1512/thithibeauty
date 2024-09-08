@@ -6,7 +6,7 @@ const page = () => {
   return (
     <>
       {/* Header */}
-      <HeaderPage title={'Về Thi Thi Beauty Spa'} font={'font-gvibes'} about={true} />
+      <HeaderPage title={'Về Thi Thi Beauty Spa'} about={true} />
 
       {/* About */}
       <div className='pageChild h-fit'>
