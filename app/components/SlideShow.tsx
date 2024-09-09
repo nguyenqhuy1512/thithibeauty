@@ -75,16 +75,16 @@ export const ProductSlide: React.FC<propsProdSlide> = ({ img, title, price, sell
             <img src={img} className='w-full h-auto rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:shadow-2xl shadow-gray-600' />
           </div>
           <div className='flex-grow h-1/5'>
-            <div className='flex h-1/2 justify-start w-full overflow-hidden overflow-ellipsis'>
+            <div className='flex h-1/2 justify-center w-full overflow-hidden overflow-ellipsis items-center '>
               <span className='txtSzBase'>{title}</span>
             </div>
-            <div className='flex h-1/2 justify-start'>
-              <div className='flex w-1/2 justify-start'>
-                <span className='txtSzBase text-red-500'>{sellPrice}đ</span>
+            <div className='flex h-1/2 justify-center bg-pink-400 items-center'>
+              <div className='flex w-1/2 justify-center'>
+                <span className='txtSzBase text-white'>{sellPrice}đ</span>
               </div>
-              <div className='flex w-1/2 justify-end'>
+              {/* <div className='flex w-1/2 justify-center'>
                 <span className='txtSzBase line-through'>{price}đ</span>
-              </div>
+              </div> */}
             </div>
 
           </div>

@@ -7,6 +7,7 @@ import { setSlide, setProd, setFeed, setAbout } from '@/app/components/config'
 import { slideData, serviceData, prodList, slideFeed, slideAbout, aboutInfo, PhotoLibrary, brandNmList } from '../components/content';
 import LightBox from './LightBox';
 import '../components/logo';
+import Link from 'next/link';
 
 
 const page = () => {
@@ -26,7 +27,7 @@ const page = () => {
       </div>
 
       {/* ABOUT */}
-      <div className='homeChild bg-pink-50'>
+      <div className='homeChild bg-gradient-to-r  from-pink-50 to-pink-200'>
         <div className='childTitle'>
           <span className='homeTitle'>
             THI THI BEAUTY
@@ -73,7 +74,7 @@ const page = () => {
       </div>
 
       {/* FEEDBACK */}
-      <div className='homeChild bg-pink-50 h-fit pb-10 
+      <div className='homeChild bg-gradient-to-r  from-pink-50 to-pink-200 h-fit pb-10 
                       xs:pl-5 xs:pr-5
                       md:pl-10 md:pr-10
                       lg:pl-[15%] lg:pr-[15%] '>
@@ -123,30 +124,30 @@ const page = () => {
             </div>
           </div>
 
-          <div className='childContentR mt-10 mb-20 lg:h-[60%]'>
+          <div className='childContentR mt-10 mb-10 lg:h-[60%]'>
             <div className='flex h-full w-full mb-5 text-center'>
               <span className='txtSzBaseTt'>Các dòng sản phẩm nổi bật và được ưa chuận</span>
             </div>
-            
-              <Slider {...setProd}>
-                {prodList.map((item) => (
-                  <ProductSlide
-                    key={item.id}
-                    img={item.img}
-                    title={item.title}
-                    price={item.price}
-                    sellPrice={item.sellPrice}
-                  />
-                ))}
-              </Slider>
-
-
+            <Slider {...setProd}>
+              {prodList.map((item) => (
+                <ProductSlide
+                  key={item.id}
+                  img={item.img}
+                  title={item.title}
+                  price={item.price}
+                  sellPrice={item.sellPrice}
+                />
+              ))}
+            </Slider>
+            <div className='flex w-full h-fit mt-10 justify-end'>
+              <Link href="/Products" className='txtSzBase underline'>Xem thêm sản phẩm →</Link>
+            </div>
           </div>
         </div>
       </div>
 
       {/* PHOTO LIBRARY */}
-      {/* <div className='homeChild xs:p-5 lg:pl-[15%] lg:pr-[15%] bg-pink-50 h-fit'>
+      <div className='homeChild xs:p-5 lg:pl-[15%] lg:pr-[15%] bg-pink-50 h-fit'>
         <div className='childTitle'>
           <span className='homeTitle'>
             THƯ VIỆN HÌNH ẢNH
@@ -156,7 +157,7 @@ const page = () => {
           <LightBox
             images={PhotoLibrary} />
         </div>
-      </div> */}
+      </div>
 
     </div>
   )

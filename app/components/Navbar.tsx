@@ -121,7 +121,7 @@ const Navbar: React.FC = () => {
                             <a href="#" className="mbNavItem">THƯ VIỆN</a>
                             <a href="#" className="mbNavItem">KHUYẾN MÃI</a>
                             <a href="#" className="mbNavItem">LIÊN LẠC</a>
-                            <Link href="/Workingday" className="group btn font-about bg-pink-200 text-pink-600 hover:text-white border-none hover:bg-pink-600 font-bold text-lg lg:text-xl"
+                            <Link href="/Workingday" className="group btn font-Lora bg-pink-200 text-pink-600 hover:text-white border-none hover:bg-pink-600 font-bold text-lg lg:text-xl"
                             >
                                 ĐẶT LỊCH
                                 <svg className="group-hover:text-white w-6 h-6 text-pink-600 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">

@@ -90,9 +90,16 @@ body {
   }
 
   /* footer */
-  .infoTxt {
-    @apply text-pink-600 xs:text-sm lg:text-lg hover:text-blue-600 hover:ml-5 hover:underline duration-300 font-Lora
+  .ft-title{
+    @apply text-pink-800 xs:text-base lg:text-2xl font-Lora
   }
+  .ft-item {
+    @apply text-white xs:text-sm lg:text-lg hover:text-blue-600 hover:ml-5 hover:underline duration-300 font-Lora
+  }
+
+  /* footer */
+
+
 
   .fontSzTitle {
     @apply xs:text-xl lg:text-2xl font-service font-semibold
