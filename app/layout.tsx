@@ -27,7 +27,7 @@ export default function RootLayout({
 
     <html lang='en'>
       <body className='relative '>
-        <div className="z-20 relative">
+        <div className="z-20 relative ">
           <Navbar />
         </div>
         <div className="z-10">

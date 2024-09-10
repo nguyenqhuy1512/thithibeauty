@@ -14,7 +14,7 @@ const page = () => {
 
   return (
     <>
-      <HeaderPage bg_img={'/bg/bg-product.png'} title={'SẢN PHẨM'} font={'font-about'} about={false} />
+      <HeaderPage bg_img={'/bg/bg-product.png'} title={'SẢN PHẨM'} about={false} />
 
       <div className='flex h-16 w-full pl-[15%] pr-[15%] bg-pink-200'>
         <div className='flex h-full w-full items-center'>
@@ -93,7 +93,7 @@ const page = () => {
       </div>
 
       <div className='pageChild h-fit'>
-        <div className='flex h-1/2 w-full pl-[15%] pr-[15%]'>
+        <div className='flex h-1/2 w-full '>
           <div className='relative h-full w-full'>
             <Slider {...setProductSlide}>
               {ProductSlideList.map((item) => (

@@ -13,7 +13,7 @@ import Link from 'next/link';
 const page = () => {
 
   return (
-    <div>
+    <div className=' overflow-x-hidden'>
       {/* SLIDER */}
       <div className='relative bg-pink-50 overflow-hidden'>
         <Slider {...setSlide}>

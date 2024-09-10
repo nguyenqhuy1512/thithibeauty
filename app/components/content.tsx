@@ -80,15 +80,15 @@ export const serviceData = [
         img: "/icon/Peel.svg",
         title: "Chemical Peel",
         descript: "Chemical Peel (Peel da) là một phương pháp tẩy tế bào chết trên da, hay gọi là tẩy tế bào chết hóa học với nồng độ cao."
-        +" Các hợp chất được sử dụng luôn được tư vấn và lựa chọn tùy thuộc vào làn da của khách hàng nhầm đảm bảo chất lượng lột bỏ và tái tạo "
-        +"một làn da mới. "
+            + " Các hợp chất được sử dụng luôn được tư vấn và lựa chọn tùy thuộc vào làn da của khách hàng nhầm đảm bảo chất lượng lột bỏ và tái tạo "
+            + "một làn da mới. "
     },
     {
         id: 2,
         img: "/icon/trimun.svg",
         title: "Chăm sóc mụn",
         descript: "Điều trị và chăm sóc da mụn tại spa luôn đảm bảo thực hiện theo quy trình chuẩn y khoa 12 bước. Sau liệu trình chăm sốc,"
-        +" làn da mặt được vệ sinh, loại bỏ hầu hết nhân mụn, sát khuẩn và bổ sung đầy đủ dưỡng chất để tái tạo mô da mới."
+            + " làn da mặt được vệ sinh, loại bỏ hầu hết nhân mụn, sát khuẩn và bổ sung đầy đủ dưỡng chất để tái tạo mô da mới."
     },
 ];
 
@@ -285,68 +285,59 @@ export const PhotoLibrary = [
 //AboutPage
 export const AboutContent = {
     firstPart: {
-        title: () => {
-            return (
-                <div>
-                    <span className="text-5xl font-service text-pink-300">
-                        "Cô chủ nhỏ" bên trong <br />
-                        chiếc Spa beauty xinh xinh!
-                    </span>
-                </div>
-            )
-        },
+        title: "Cô chủ nhỏ bên trong chiếc Spa beauty xinh xinh!",
         content: () => {
             return (
                 <div>
-                    <span className="text-2xl font-service text-pink-800">
-                        Kính chào quý khách đã đến với <span className="font-semibold text-3xl font-gvibes">Thi Thi Beauty Spa </span>.
-                        <br />
-                        Một chiếc Spa tuy nhỏ nhỏ xinh xinh nhưng chứa đựng bên trong là một niềm đam mê làm đẹp vô cùng to lớn cũng như mong muốn
-                        mang lại những trãi nghiệm chăm sóc da chất lượng và uy tín nhất dành cho quý khách.
-                        <br />
-                        Spa luôn đặt sự chu đáo, tận tình và tỉ mỉ lên hàng đầu, cùng với những dịch vụ chăm sóc hiệu quả, trang thiết bị
-                        hiện đại và các dòng mỹ phẩm tốt nhất để tiếp đón và phục vụ quý khách hàng.
-                        <br />
-                        Spa luôn mong muốn được lắng nghe và đồng hành cùng quý khách trên suốt hành trình làm đẹp và chăm sóc làn da của mình...
-                    </span>
+                    Kính chào quý khách đã đến với <span className="font-semibold xs:text-xl md:text-3xl font-GVibes text-pink-400">Thi Thi Beauty Spa </span>.
+                    <br />
+                    Một chiếc Spa tuy nhỏ nhỏ xinh xinh nhưng chứa đựng bên trong là một niềm đam mê làm đẹp vô cùng to lớn cũng như mong muốn
+                    mang lại những trãi nghiệm chăm sóc da chất lượng và uy tín nhất dành cho quý khách.
+                    <br />
+                    Spa luôn đặt sự chu đáo, tận tình và tỉ mỉ lên hàng đầu, cùng với những dịch vụ chăm sóc hiệu quả, trang thiết bị
+                    hiện đại và các dòng mỹ phẩm tốt nhất để tiếp đón và phục vụ quý khách hàng.
+                    <br />
+                    Spa luôn mong muốn được lắng nghe và đồng hành cùng quý khách trên suốt hành trình làm đẹp và chăm sóc làn da của mình...
                 </div>
 
             )
         }
     },
-    secondPart: {
-        img: "/about-img.jpg"
-    },
+    secondPart: [
+        "/about/about1.png",
+        "/about/about2.png",
+        "/about/about3.png",
+        "/about/about1.png",
+        "/about/about2.png",
+        "/about/about3.png",
+    ],
     thirdPart: {
         img: "/photo1.jpg",
         content: () => {
             return (
                 <div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span className="text-4xl font-service">Vì sao chọn <span className="font-gvibes text-pink-600">Thi Thi Beauty Spa ?</span></span>
+                    <span className="xs:text-[27px] md:text-[36px] font-Cormorant">Vì sao chọn <span className="font-GVibes text-pink-600">Thi Thi Beauty Spa ?</span></span>
+                    <br /><br />
+                    Một HomeSpa nhỏ xinh với 2 giường điều trị được mở ra vào đầu năm 2022,
+                    bởi một cô gái cũng nhỏ nhắn nhưng có một niềm đam mê cùng với cái tâm cực lớn với việc làm đẹp và điều trị da.
+                    Bản thân "Cô chủ nhỏ" đã luôn cố gắng cải thiện, làm mới những dịch vụ chăm sóc của Spa từng ngày,
+                    nhằm đem đến cho khách hàng những liệu trình điều trị an toàn và chất lượng nhất.
                     <br />
-                    <span className="text-xl font-service">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Một HomeSpa nhỏ xinh với 2 giường điều trị được mở ra vào đầu năm 2022,
-                        bởi một cô gái cũng nhỏ nhắn nhưng có một niềm đam mê cùng với cái tâm cực lớn với việc làm đẹp và điều trị da.
-                        Bản thân "cô chủ nhỏ" đã luôn cố gắng cải thiện, làm mới những dịch vụ chăm sóc của Spa từng ngày,
-                        nhằm đem đến cho khách hàng những liệu trình điều trị an toàn và chất lượng nhất.
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spa luôn đặt bản thân ở vị trí Khách để có thể đồng cảm được những suy tư và lo lắng
-                        của Khách trong những vấn đề về làn da. Spa sẽ luôn chào đón nhiệt thành, tư vấn tận tình, chăm sóc ân cần và theo dõi một cách chu đáo
-                        với từng case trị liệu của Khách cho đến khi đạt được kết quả mong đợi.
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spa tự tin là nơi có thể đón nhận và đáp ứng mọi nhu cầu của
-                        Khách về vấn đề khắc phục và làm đẹp làn da. Với các liệu trình mang tính an toàn và hiệu quả cao nhất như Mesotheraphy, Peel da, chăm sóc da mụn từ cơ bản đến nâng cao...
-                        Mỗi liệu trình đều có những lựa chọn riêng biệt, đa dạng, nhiều loại mỹ phẩm chuyên dụng, có nguồn gốc được kiểm chứng đã và luôn được lựa chọn và chuẩn bị kỹ lưỡng
-                        để có thể phù hợp với đa số cơ địa da của Khách hàng.
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Niềm vui và nụ cười của Khách hàng sẽ mãi là nguồn động lực to lớn để Spa làm nghề và phát triển
-                        trên hành trình mang lại những trãi nghiệm chăm sóc da ngày càng dễ chịu, thoải mái và hiệu quả nhất.
-                        <br />  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chân thành, tri ân và hy vọng đón nhận được sự ủng hộ Spa từ Khách.
-                        Hãy để <span className="text-2xl font-gvibes text-pink-600">Thi Thi Beauty Spa</span> có cơ hội được đồng hành cùng Khách trên hành trình chinh phục và bảo vệ
-                        làn da của mình.
-                    </span>
+                    Spa luôn đặt bản thân ở vị trí Khách để có thể đồng cảm được những suy tư và lo lắng
+                    của Khách trong những vấn đề về làn da. Spa sẽ luôn chào đón nhiệt thành, tư vấn tận tình, chăm sóc ân cần và theo dõi một cách chu đáo
+                    với từng case trị liệu của Khách cho đến khi đạt được kết quả mong đợi.
+                    <br />
+                    Spa tự tin là nơi có thể đón nhận và đáp ứng mọi nhu cầu của
+                    Khách về vấn đề khắc phục và làm đẹp làn da. Với các liệu trình mang tính an toàn và hiệu quả cao nhất như <span className="font-semibold">Mesotheraphy, Peel da, chăm sóc da mụn từ cơ bản đến nâng cao...</span>
+                    Mỗi liệu trình đều có những lựa chọn riêng biệt, đa dạng, nhiều loại mỹ phẩm chuyên dụng, có nguồn gốc được kiểm chứng đã và luôn được lựa chọn và chuẩn bị kỹ lưỡng
+                    để có thể phù hợp với đa số cơ địa da của Khách hàng.
+                    <br />
+                    Niềm vui và nụ cười của Khách hàng sẽ mãi là nguồn động lực to lớn để Spa làm nghề và phát triển
+                    trên hành trình mang lại những trãi nghiệm chăm sóc da ngày càng dễ chịu, thoải mái và hiệu quả nhất.
+                    <br />
+                    Chân thành, tri ân và hy vọng đón nhận được sự ủng hộ Spa từ Khách.
+                    Hãy để <span className="xs:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-GVibes text-pink-600">Thi Thi Beauty Spa</span> có cơ hội được đồng hành cùng Khách trên hành trình chinh phục và bảo vệ
+                    làn da của mình.
 
                 </div>
             )
@@ -359,286 +350,278 @@ export const AboutContent = {
 //ServicesPage
 export const ServicesContent = [
     {
-        id:0,
+        id: 0,
         title: "MESOTHERAPHY",
         img: ['/sv-meso1.jpeg', 'sv-meso2.jpg'],
         content: {
-            info: () => {
-                return (
-                    <>
-                        <div>
-                            <span className="font-semibold">Mesotherapy là gì ? </span>
-                            <br />
-                            <span>
-                                Là phương pháp vàng trong làng trẻ hóa, phục hồi da
-                                bằng cách đưa trực tiếp các chất cần thiết cho da vào trung bì như HA, các loại Peptide, vitamin, enzyme, hormone...
-                                <br />
-                                <span className="font-semibold">Mesotherapy có tác dụng ? </span>
-                                <br />
-                                Trẻ hóa và săn chắc da.<br />
-                                Làm sáng da.<br />
-                                Kích thích mọc tóc.<br />
-                                Điều trị sẹo rỗ.<br />
-                                Điều trị chứng tăng tiết mồ hôi.
-                                <br />
-                                <span className="font-semibold">Mesotherapy phù hợp với ? </span>
-                                <br />
-                                Làn da mệt mỏi, sạm xỉn mất nước<br />
-                                Da yếu, tổn thương, cần phục hồi từ gốc<br />
-                                Da lão hoá nhẹ đến nhiều, xuất hiện nhăn li ti<br />
-                                Hay đơn giản làn da muốn được căng bóng khoẻ, ngậm nước, trong trẻo như sương mai từ tận gốc
-                                <br />
-                                <span className="font-semibold">Thời gian trị liệu :  </span>  2 – 4 tuần/lần( Duy trì từ 3 - 6 lần).
-                                <br />
-                            </span>
-                        </div>
-                    </>
-                )
-            },
+            info: [
+                {
+                    issue: "Mesotherapy là gì ?",
+                    explain: "Là phương pháp vàng trong làng trẻ hóa, phục hồi da"
+                        + " bằng cách đưa trực tiếp các chất cần thiết cho da vào trung bì như HA, các loại Peptide, vitamin, enzyme, hormone..."
+                },
+                {
+                    issue: "Mesotherapy có tác dụng ?",
+                    explain: "Trẻ hóa và săn chắc da. \nLàm sáng da. \nKích thích mọc tóc. \nĐiều trị sẹo rỗ. \nĐiều trị chứng tăng tiết mồ hôi."
+                },
+                {
+                    issue: "Mesotherapy phù hợp với ?",
+                    explain: "Làn da mệt mỏi, sạm xỉn mất nước. \nDa yếu, tổn thương, cần phục hồi từ gốc. \nDa lão hoá nhẹ đến nhiều, xuất hiện nhăn li ti. \nHay đơn giản làn da muốn được căng bóng khoẻ, \nngậm nước, trong trẻo như sương mai từ tận gốc."
+                },
+                {
+                    issue: "Thời gian trị liệu :",
+                    explain: "2 – 4 tuần/lần( Duy trì từ 3 - 6 lần)."
+                },
+            ],
             menu: [
                 {
                     id: 0,
-                    method: "♣ Meso botox kiềm dầu",
-                    price: "3.000.000đ"
+                    method: "● Meso botox kiềm dầu",
+                    price: "3.000.000đ",
+                    bonus:""
                 },
                 {
                     id: 1,
-                    method: "♣ Meso botox căng bóng",
-                    price: "3.500.000đ"
+                    method: "● Meso botox căng bóng",
+                    price: "3.500.000đ",
+                    bonus:""
                 },
                 {
                     id: 2,
-                    method: "♣ Meso căng bóng HA thuần",
-                    price: " 1.690.000đ"
+                    method: "● Meso căng bóng HA thuần",
+                    price: " 1.690.000đ",
+                    bonus:""
                 },
                 {
                     id: 3,
-                    method: "♣ Meso căng bóng HA châu Âu (dành cho da lớn tuổi)",
-                    price: "3.000.000đ"
+                    method: "● Meso căng bóng HA châu Âu (dành cho da lớn tuổi)",
+                    price: "3.000.000đ",
+                    bonus:""
                 },
                 {
                     id: 4,
-                    method: "♣ Meso căng bóng HA thuần Thụy Sĩ",
-                    price: "4.000.000đ"
+                    method: "● Meso căng bóng HA thuần Thụy Sĩ",
+                    price: "4.000.000đ",
+                    bonus:""
                 },
                 {
                     id: 5,
-                    method: "♣ Meso sáng da Tây Ban Nha",
-                    price: "2.500.000đ"
+                    method: "● Meso sáng da Tây Ban Nha",
+                    price: "2.500.000đ",
+                    bonus:""
                 },
                 {
                     id: 6,
-                    method: "♣ Meso sáng da Thụy Sĩ",
-                    price: "3.000.000đ"
+                    method: "● Meso sáng da Thụy Sĩ",
+                    price: "3.000.000đ",
+                    bonus:""
                 },
                 {
                     id: 7,
-                    method: "♣ Meso sáng da không buốt",
-                    price: "3.500.000đ"
+                    method: "● Meso sáng da không buốt",
+                    price: "3.500.000đ",
+                    bonus:""
                 },
                 {
                     id: 8,
-                    method: "♣ Meso phục hồi Tây Ban Nha",
-                    price: "2.000.000đ"
+                    method: "● Meso phục hồi Tây Ban Nha",
+                    price: "2.000.000đ",
+                    bonus:""
                 },
                 {
                     id: 9,
-                    method: "♣ Meso phục hồi Tế bào gốc",
-                    price: "5.000.000đ"
+                    method: "● Meso phục hồi Tế bào gốc",
+                    price: "5.000.000đ",
+                    bonus:""
                 },
                 {
                     id: 10,
-                    method: "♣ Meso da yếu - mỏng - đỏ - nỗi mao mạch",
-                    price: "2.500.000đ"
+                    method: "● Meso da yếu - mỏng - đỏ - nỗi mao mạch",
+                    price: "2.500.000đ",
+                    bonus:""
                 },
                 {
                     id: 11,
-                    method: "♣ Meso se khít lỗ chân lông",
-                    price: "2.500.000đ - 3.500.000đ"
+                    method: "● Meso se khít lỗ chân lông",
+                    price: "2.500.000đ-3.500.000đ",
+                    bonus:""
                 },
                 {
                     id: 12,
-                    method: "♣ Meso nám",
-                    price: "3.500.000đ"
+                    method: "● Meso nám",
+                    price: "3.500.000đ",
+                    bonus:""
                 },
                 {
                     id: 13,
-                    method: "♣ BAP Prohilo",
-                    price: "8.000.000đ"
+                    method: "● BAP Prohilo",
+                    price: "8.000.000đ",
+                    bonus:""
                 },
                 {
                     id: 14,
-                    method: "♣ BAP Prohilo 3 buổi(gói)",
-                    price: "21.000.000đ"
+                    method: "● BAP Prohilo 3 buổi(gói)",
+                    price: "21.000.000đ",
+                    bonus:""
                 },
-            ]
+            ],
+            discount:"Khách mua liệu trình 5 buổi tặng 1 buổi. \nLiệu trình 4 buổi tặng 1 buổi peel da 1.200.000đ"
         }
     },
     {
-        id:1,
+        id: 1,
         title: "Chemical Peel (Peel da)",
         img: ['/sv-peel.jpg', 'sv-meso2.jpg'],
         content: {
-            info: () => {
-                return (
-                    <>
-                        <div className="xs:text-md lg:text-lg">
-
-                            <span className="font-semibold font-about">Chemical Peel (Peel da) là gì ? </span>
-                            <br />
-                            <span className="font-about">
-                                Là một phương pháp tẩy tế bào chết trên da, hay gọi là tẩy tế bào chết hóa học với nồng độ cao.
-                                <br />
-                                <span className="font-semibold">Tác dụng của Chemical Peel (Peel da) ? </span>
-                                <br />
-                                Loại bỏ các tạp chất nằm sâu bên trong lỗ chân lông.<br />
-                                Loại bỏ các cồi mụn cùng bã nhờn và vi khuẩn gây mụn, làm thông thoáng và se khít lỗ chân lông.<br />
-                                Giúp làm giảm rõ rệt các tình trạng: nám da, sạm da, thâm mụn,...<br />
-                                Tăng khả năng đàn hồi da: giảm tình trạng xuất hiện nếp nhăn, chảy xệ,...<br />
-                                Rút ngắn chu kì tái tạo da, giúp bạn nhanh chóng có làn da khỏe mạnh.<br />
-                                Kích thích sự sản sinh Collagen và Elastin làm đầy các tổn thương và tăng độ đàn hồi.
-                                <br />
-                                <span className="font-semibold">Chemical Peel (Peel da) phù hợp với ? </span>
-                                <br />
-                                Da có mụn ẩn, mụn viêm, mụn đầu đen<br />
-                                Da nhiều vết thâm, không đều màu.<br />
-                                Da thiếu sức sống, không căng bóng.<br />
-                                Da dầu, da khô, da hỗn hợp.<br />
-                                Da có lỗ chân lông to.<br />
-                                Da có tuyến bã nhờn hoạt động mạnh
-                                <br />
-                                <span className="font-semibold">Thời gian trị liệu :  </span>  Đạt kết quả sau 2 - 3 buổi.
-                                <br />
-                            </span>
-                        </div>
-                    </>
-                )
-            },
+            info: [
+                {
+                    issue: "Chemical Peel (Peel da) là gì ?",
+                    explain: "Là một phương pháp tẩy tế bào chết trên da, hay gọi là tẩy tế bào chết hóa học với nồng độ cao.",
+                },
+                {
+                    issue: "Tác dụng của Chemical Peel (Peel da) ?",
+                    explain: "Loại bỏ các tạp chất nằm sâu bên trong lỗ chân lông.Loại bỏ các cồi mụn cùng bã nhờn và vi khuẩn gây mụn, làm thông thoáng và se khít lỗ chân lông."
+                        + "Giúp làm giảm rõ rệt các tình trạng: nám da, sạm da, thâm mụn, ...Tăng khả năng đàn hồi da: giảm tình trạng xuất hiện nếp nhăn, chảy xệ, ..."
+                        + "Rút ngắn chu kì tái tạo da, giúp bạn nhanh chóng có làn da khỏe mạnh. Kích thích sự sản sinh Collagen và Elastin làm đầy các tổn thương và tăng độ đàn hồi.",
+                },
+                {
+                    issue: "Chemical Peel (Peel da) phù hợp với ?",
+                    explain: "Da có mụn ẩn, mụn viêm, mụn đầu đen. \nDa nhiều vết thâm, không đều màu.\nDa thiếu sức sống, không căng bóng.\nDa dầu, da khô, da hỗn hợp.\nDa có lỗ chân lông to.\nDa có tuyến bã nhờn hoạt động mạnh",
+                },
+                {
+                    issue: "Thời gian trị liệu :",
+                    explain: "Đạt kết quả sau 2 - 3 buổi."
+                }
+            ],
             menu: [
                 {
                     id: 0,
-                    method: "♣ Peel mụn Tây Ban Nha",
-                    price: "900.000đ"
+                    method: "● Peel mụn Tây Ban Nha",
+                    price: "900.000đ",
+                    bonus:""
                 },
                 {
                     id: 1,
-                    method: "♣ Peel mụn Châu Âu",
-                    price: "1.200.000đ"
+                    method: "● Peel mụn Châu Âu",
+                    price: "1.200.000đ",
+                    bonus:""
                 },
                 {
                     id: 2,
-                    method: "♣ Peel thâm mụn, hỗ trợ căng bóng(có bong), cấp độ 1",
-                    price: " 1.200.000đ"
+                    method: "● Peel thâm mụn, hỗ trợ căng bóng(có bong), cấp độ 1",
+                    price: " 1.200.000đ",
+                    bonus:""
                 },
                 {
                     id: 3,
-                    method: "♣ Peel thâm mụn, hỗ trợ căng bóng(có bong), cấp độ 2",
-                    price: "1.400.000đ"
+                    method: "● Peel thâm mụn, hỗ trợ căng bóng(có bong), cấp độ 2",
+                    price: "1.400.000đ",
+                    bonus:""
                 },
                 {
                     id: 4,
-                    method: "♣ Peel nám (có bong)",
-                    price: "2.200.000đ"
+                    method: "● Peel nám (có bong)",
+                    price: "2.200.000đ",
+                    bonus:""
                 },
                 {
                     id: 5,
-                    method: "♣ Peel tảo không bong",
-                    price: "800.000đ"
+                    method: "● Peel tảo không bong",
+                    price: "800.000đ",
+                    bonus:""
                 },
                 {
                     id: 6,
-                    method: "♣ Peel tảo có bong",
-                    price: "1.800.000đ - 2.200.000đ"
+                    method: "● Peel tảo có bong",
+                    price: "1.800.000đ-2.200.000đ",
+                    bonus:""
                 },
                 {
                     id: 7,
-                    method: "♣ Peel không bong cho da mụn hỗ trợ sau mụn (tối thiểu 3 buổi)",
-                    price: "500.000đ"
+                    method: "● Peel không bong cho da mụn hỗ trợ sau mụn (tối thiểu 3 buổi)",
+                    price: "500.000đ",
+                    bonus:""
                 },
                 {
                     id: 8,
-                    method: "♣ Peel nách ( liệu trình 3 buổi )",
-                    price: "2.000.000đ"
+                    method: "● Peel nách ( liệu trình 3 buổi )",
+                    price: "2.000.000đ",
+                    bonus:""
                 },
-            ]
+            ],
+            discount:""
         }
     },
     {
-        id:2,
+        id: 2,
         title: "Chăm sóc mụn từ cơ bản đến chuyên sâu",
         img: ['/sv-trimun.jpg', 'sv-meso2.jpg'],
         content: {
-            info: () => {
-                return (
-                    <>
-                        <div className="xs:text-md lg:text-lg">
-                            <span className="font-semibold font-about">Điều trị và chăm sóc da mụn </span>
-                            <br />
-                            <span className="font-about">
-                                Quy trình chăm sóc da mụn theo chuẩn y khoa, bao gồm 12 bước:
-                                <br />
-                                &nbsp;&nbsp;&nbsp; B1: Tẩy trang<br />
-                                &nbsp;&nbsp;&nbsp; B2: Rửa mặt<br />
-                                &nbsp;&nbsp;&nbsp; B3: Tẩy tế bào chết( tuỳ tình trạng da)<br />
-                                &nbsp;&nbsp;&nbsp; B4: Xông hơi + hút dầu + cà da chết<br />
-                                &nbsp;&nbsp;&nbsp; B5: Vệ sinh da và khử trùng dụng cụ<br />
-                                &nbsp;&nbsp;&nbsp; B6: Lấy mụn chuẩn y khoa<br />
-                                &nbsp;&nbsp;&nbsp; B7: Đi điện tím<br />
-                                &nbsp;&nbsp;&nbsp; B8: Đắp mặt nạ<br />
-                                &nbsp;&nbsp;&nbsp; B9: Bôi kháng sinh tại chỗ<br />
-                                &nbsp;&nbsp;&nbsp; B10: Chiếu ánh sáng sinh học<br />
-                                &nbsp;&nbsp;&nbsp; B11: Điện di máy lạnh<br />
-                                &nbsp;&nbsp;&nbsp; B12: Tư vấn cách điều trị và chăm sóc da tại nhà<br />
-                                <span className="font-semibold">Kết quả điều trị </span>
-                                <br />
-                                Làm sạch và loại bỏ mụn trên da mặt.<br />
-                                Phục hồi và tái tạo lại vùng da bị mụn.<br />
-                                Bổ sung các dưỡng chất cần thiết cho việc phục hồi và dưỡng da.<br />
-                                Làm mờ đi các vết sẹo tạo ra bởi mụn.<br />
-                            </span>
-                        </div>
-                    </>
-                )
+            info: [
+                {
+                    issue: "Điều trị và chăm sóc da mụn ",
+                    explain: "Quy trình chăm sóc da mụn theo chuẩn y khoa, bao gồm 12 bước:\n"
+                        + "     B1: Tẩy trang\n"
+                        + "     B2: Rửa mặt\n"
+                        + "     B3: Tẩy tế bào chết(tuỳ tình trạng da)\n"
+                        + "     B4: Xông hơi + hút dầu + cà da chết\n"
+                        + "     B5: Vệ sinh da và khử trùng dụng cụ\n"
+                        + "     B6: Lấy mụn chuẩn y khoa \n"
+                        + "     B7: Đi điện tím\n"
+                        + "     B8: Đắp mặt nạ\n"
+                        + "     B9: Bôi kháng sinh tại chỗ\n"
+                        + "     B10: Chiếu ánh sáng sinh học\n"
+                        + "     B11: Điện di máy lạnh\n"
+                        + "     B12: Tư vấn cách điều trị và chăm sóc da tại nhà\n"
+                },
+                {
+                    issue: "Kết quả điều trị",
+                    explain: "Làm sạch và loại bỏ mụn trên da mặt.\n"
+                        + "Phục hồi và tái tạo lại vùng da bị mụn.\n"
+                        + "Bổ sung các dưỡng chất cần thiết cho việc phục hồi và dưỡng da.\n"
+                        + "Làm mờ đi các vết sẹo tạo ra bởi mụn."
+                }
+            ],
+        menu: [
+            {
+                id: 0,
+                method: "● Nặn mụn (bao gồm lấy sạch vùng mũi + sản phẩm bổi thâm tại nhà) ",
+                price: "250.000đ",
+                bonus: ""
             },
-            menu: [
-                {
-                    id: 0,
-                    method: "♣ Nặn mụn (bao gồm lấy sạch vùng mũi + sản phẩm bổi thâm tại nhà) ",
-                    price: "250.000đ",
-                    bonus: ""
-                },
-                {
-                    id: 1,
-                    method: "♣ Thải độc da CO2 (da yếu, da cor, da bí tắc)",
-                    price: "600.000đ",
-                    bonus: ""
-                },
-                {
-                    id: 2,
-                    method: "♣ Aquapeeling & Detox",
-                    price: " 700.000đ",
-                    bonus: ""
-                },
-                {
-                    id: 3,
-                    method: "♣ Thải độc chuyên sâu căng bóng (căng bóng, mềm da, sáng da, giảm mụn)",
-                    price: "900.000đ",
-                    bonus: "👉Gói 5 buổi tặng 1 buổi"
-                },
-                {
-                    id: 4,
-                    method: "♣ Thải độc chuyên sâu hỗ trợ sau mụn (căng bóng, giảm thâm đỏ, giảm mụn)",
-                    price: "900.000đ",
-                    bonus: "👉Gói 5 buổi tặng 1 buổi"
-                },
-                {
-                    id: 5,
-                    method: "♣ Thải độc da Nội Bào 02 - liệu trình 3 buổi (da sạm, da yếu, da nhiễm cor) ",
-                    price: "1.800.000đ",
-                    bonus: "👉Gói 3 buổi tặng 1 buổi thải độc chuyên sâu ngoại bào CO2"
-                },
-            ]
-        }
+            {
+                id: 1,
+                method: "● Thải độc da CO2 (da yếu, da cor, da bí tắc)",
+                price: "600.000đ",
+                bonus: ""
+            },
+            {
+                id: 2,
+                method: "● Aquapeeling & Detox",
+                price: " 700.000đ",
+                bonus: ""
+            },
+            {
+                id: 3,
+                method: "● Thải độc chuyên sâu căng bóng (căng bóng, mềm da, sáng da, giảm mụn)",
+                price: "900.000đ",
+                bonus: "👉Gói 5 buổi tặng 1 buổi"
+            },
+            {
+                id: 4,
+                method: "● Thải độc chuyên sâu hỗ trợ sau mụn (căng bóng, giảm thâm đỏ, giảm mụn)",
+                price: "900.000đ",
+                bonus: "👉Gói 5 buổi tặng 1 buổi"
+            },
+            {
+                id: 5,
+                method: "● Thải độc da Nội Bào 02 - liệu trình 3 buổi (da sạm, da yếu, da nhiễm cor) ",
+                price: "1.800.000đ",
+                bonus: "👉Gói 3 buổi tặng 1 buổi thải độc chuyên sâu ngoại bào CO2"
+            },
+        ],
+        discount:""
+    }
     }
 ]
 

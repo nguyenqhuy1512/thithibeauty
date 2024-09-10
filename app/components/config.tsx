@@ -120,7 +120,7 @@ export const setFeed = {
 export const setProductSlide = {
     dots: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     pauseOnHover: false,

@@ -35,12 +35,12 @@ body {
 
   /* all content in web */
   .txtSzBase {
-    @apply xs:text-xs md:text-sm lg:text-base xl:text-lg font-Lora
+    @apply xs:text-sm md:text-base lg:text-xl font-Lora
   }
 
   /* all content in web */
   .txtSzBaseTt {
-    @apply xs:text-sm md:text-lg lg:text-xl xl:text-2xl font-Lora
+    @apply xs:text-base md:text-xl lg:text-2xl font-Lora
   }
 
   /* all special notice in web */
@@ -48,17 +48,28 @@ body {
     @apply xs:text-2xl lg:text-3xl text-pink-400 font-GVibes font-semibold
   }
 
-
-
-
-
-
-
-
+  .txtSzBaseDecor {
+    @apply xs:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-Cormorant
+  }
 
   .pageChild {
     @apply relative w-screen h-screen
   }
+
+  /* services */
+  .fontSzTitleService {
+    @apply xs:text-xl md:text-2xl lg:text-3xl font-Cormorant font-semibold
+  }
+
+  .imgService {
+    @apply xs:h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px]
+  }
+
+  /* services */
+
+
+
+
 
   .childTitle {
     @apply relative w-full xs:h-[10%] xs:pt-5 lg:h-[20%] lg:pt-10 content-center text-center justify-center
@@ -90,9 +101,10 @@ body {
   }
 
   /* footer */
-  .ft-title{
+  .ft-title {
     @apply text-pink-800 xs:text-base lg:text-2xl font-Lora
   }
+
   .ft-item {
     @apply text-white xs:text-sm lg:text-lg hover:text-blue-600 hover:ml-5 hover:underline duration-300 font-Lora
   }
@@ -101,22 +113,6 @@ body {
 
 
 
-  .fontSzTitle {
-    @apply xs:text-xl lg:text-2xl font-service font-semibold
-  }
-
-  .fontSzCont {
-    @apply xs:text-base md:text-lg lg:text-xl font-Lora
-  }
-
-  /* services */
-  .fontSzTitleService {
-    @apply xs:text-xl lg:text-3xl font-Cormorant font-semibold
-  }
-
-  .imgService {
-    @apply xs:h-[300px] sm:h-[300px] md:h-[300px] lg:h-[600px]
-  }
 }
 
 @layer utilities {

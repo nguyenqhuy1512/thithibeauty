@@ -16,29 +16,29 @@ const Footer = () => {
 
         <div className='flex-grow-0 text-start space-y-2 lg:ml-5 2xl:ml-20 w-auto '>
           <h3 className="ft-title">THÔNG TIN</h3>
-          <ul className="text-start space-y-2">
+          <ul className="text-start space-y-2 ">
             <li><a href="#" className="ft-item">Trang chủ</a></li>
-            <li><a href="#" className="ft-item">Giới thiệu</a></li>
-            <li><a href="#" className="ft-item">Dịch vụ</a></li>
-            <li><a href="#" className="ft-item">Sản phẩm</a></li>
+            <li><a href="/about" className="ft-item">Giới thiệu</a></li>
+            <li><a href="/Services" className="ft-item">Dịch vụ</a></li>
+            <li><a href="/Products" className="ft-item">Sản phẩm</a></li>
             <li><a href="#" className="ft-item">Thư viện</a></li>
             <li><a href="#" className="ft-item">Ưu đãi</a></li>
           </ul>
         </div>
 
         <div className='lg:flex-grow xl:flex xs:space-y-4 lg:space-y-4 xl:space-y-0 lg:ml-5 2xl:ml-10 '>
-          <div className='flex-grow text-start space-y-2 2xl:text-center'>
+          <div className='flex-grow text-start space-y-2  '>
             <h3 className="ft-title">LIỆU TRÌNH</h3>
-            <ul className="text-start space-y-2 2xl:text-center">
+            <ul className="text-start space-y-2 2xl:text-start">
               <li><a href="#" className="ft-item">Mesotheraphy</a></li>
               <li><a href="#" className="ft-item">Chemical Peel</a></li>
               <li><a href="#" className="ft-item">Chăm sóc mụn</a></li>
             </ul>
           </div>
 
-          <div className='flex-grow  text-start space-y-2 xl:ml-5 2xl:text-center'>
+          <div className='flex-grow  text-start space-y-2 xl:ml-5 '>
             <h3 className="ft-title">SẢN PHẨM</h3>
-            <ul className="text-start space-y-2 2xl:text-center">
+            <ul className="text-start space-y-2">
               <li><a href="#" className="ft-item">Mesotheraphy</a></li>
               <li><a href="#" className="ft-item">Chemical Peel</a></li>
               <li><a href="#" className="ft-item">Chăm sóc mụn</a></li>
