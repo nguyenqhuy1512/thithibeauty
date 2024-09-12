@@ -6,19 +6,30 @@ import { brandNmList, Category, Origin, prodList, ProductSlideList } from '../co
 import { ProductSlide, ProductsSlide } from '../components/SlideShow';
 import Slider from 'react-slick';
 import { setProd, setProductSlide } from '../components/config';
-import { BuyIc, CartIc, SearchIc } from '../components/icon';
+import { BuyIc, CartIc, SearchIc, ToggleIc } from '../components/icon';
 import Pagination from '../components/Pagination';
+import { title } from 'process';
 
 const page = () => {
-
-  const [isMenuOpened, setMenuOpen] = useState(false);
-  const [selectedMenu, setSelectedMenu] = useState("");
-  const [isOpenSort, setOpenSort] = useState(false);
-
   interface TmpList {
     id: number,
     cnt: number
   }
+
+  interface TmpCart {
+    id: number,
+    prodNm: string,
+  }
+
+  interface TmpSearch {
+    id: number,
+    title: string,
+  }
+
+  const [isMenuOpened, setMenuOpen] = useState(false);
+  const [selectedMenu, setSelectedMenu] = useState("");
+  const [isOpenSort, setOpenSort] = useState(false);
+  const [isSearchOpt, setSearchOpt] = useState(false);
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 15;
@@ -31,6 +42,56 @@ const page = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = prodList.slice(indexOfFirstItem, indexOfLastItem);
 
+  const [cartItems, setCartItems] = useState<TmpCart[]>([]);
+
+  const [searchCate, setSearchCate] = useState<TmpSearch[]>([]);
+
+  const [searchOrigin, setSearchOrigin] = useState<TmpSearch[]>([]);
+
+  const [searchBrand, setSearchBrand] = useState<TmpSearch[]>([]);
+
+
+
+
+  const handleChkBoxCateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, name, checked } = event.target;
+    if (checked) {
+      setSearchCate([...searchCate, { id: parseInt(value), title: name }])
+    }
+    else {
+      setSearchCate(() => (
+        searchCate.filter((item) => item.id !== parseInt(value))
+      ))
+    }
+  };
+
+  const handleChkBoxOriginChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, name, checked } = event.target;
+    if (checked) {
+      setSearchOrigin([...searchOrigin, { id: parseInt(value), title: name }])
+    }
+    else {
+      setSearchOrigin(() => (
+        searchOrigin.filter((item) => item.id !== parseInt(value))
+      ))
+    }
+  };
+
+  const handleChkBoxBrandChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, name, checked } = event.target;
+    if (checked) {
+      setSearchBrand([...searchBrand, { id: parseInt(value), title: name }])
+    }
+    else {
+      setSearchBrand(() => (
+        searchBrand.filter((item) => item.id !== parseInt(value))
+      ))
+    }
+  };
+
+
+  useEffect(() => {
+  }, [])
 
 
   useEffect(() => {
@@ -136,9 +197,6 @@ const page = () => {
   }, []);
 
 
-
-
-
   return (
     <div className='overflow-hidden'>
       <HeaderPage bg_img={'/bg/bg-product.png'} title={'SẢN PHẨM'} about={false} />
@@ -148,60 +206,46 @@ const page = () => {
                       xl:pl-[15%] xl:pr-[15%] '>
         <div className='flex h-full w-full items-center'>
 
-
-          <div className="flex w-[25%]">
-            <svg
-              className="hover cursor-pointer text-pink-600"
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 512 512">
-              <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
-            </svg>
-            <button className="text-xl font-about ml-2 select-none hover:text-pink-600"
+          {/* Danh mục */}
+          <div className="flex w-[25%] items-center">
+            <ToggleIc />
+            <button className="txtSzBaseTt ml-2 select-none text-pink-600 hover:text-pink-400 "
               onClick={() => setMenuOpen(!isMenuOpened)}>
               DANH MỤC TÌM KIẾM
             </button>
           </div>
 
-
+          {/* search */}
           <div className='flex w-[50%] h-full'>
             <div className='flex w-full h-full justify-center items-center '>
-              <input type="text" className="flex input input-md text-lg ml-10 w-full font-Lora rounded-l-full" placeholder="Nhập tìm kiếm tên sản phẩm, thương hiệu,..." />
+              <input type="text" className="flex input input-md focus:outline-none focus:border-none text-lg ml-10 w-full font-Lora rounded-l-full"
+                placeholder="Nhập tìm kiếm tên sản phẩm, thương hiệu,..." />
             </div>
             <div className='flex w-20 h-full justify-start items-center'>
               <div className='flex w-auto h-auto pr-0 bg-white rounded-r-full'>
-                <button className='btn w-full h-full bg-pink-400 text-white hover:text-white hover:bg-pink-600 rounded-full border-none'>
+                <button className='btn w-full h-full bg-pink-400 text-white hover:text-white hover:bg-pink-600 rounded-full border-none'
+                  onClick={() => {
+                    if (searchCate.length > 0 || searchBrand.length > 0 || searchOrigin.length > 0) {
+                      setSearchOpt(true)
+                    }
+                    else {
+                      setSearchOpt(false)
+                    }
+                  }}>
                   <SearchIc />
                 </button>
               </div>
-
             </div>
-
-
-
-
           </div>
 
-
+          {/* cart */}
           <div className='flex w-[25%] h-full justify-end items-center'>
-            <button className='btn bg-pink-50 hover:bg-pink-400 hover:text-white ml-2'>
-
-              <svg className="w-6 h-6 dark:text-white"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24">
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
-              </svg>
-              <span className='font-about text-lg font-normal'>Giỏ hàng ( 3 )</span>
+            <button className='btn bg-pink-300 hover:bg-pink-400 border-none ml-2'>
+              <CartIc />
+              <span className='xs:hidden lg:block text-base text-white font-normal'>Giỏ hàng ({cartItems.length})</span>
             </button>
           </div>
+
         </div>
       </div>
 
@@ -213,9 +257,11 @@ const page = () => {
             {Category.map((item) => (
               <div className="form-control mb-2">
                 <label className="flex justify-start items-center space-x-5 select-none cursor-pointer">
-                  <input type="checkbox" className="checkbox" />
-                  <span className="label-text">{item.cateNm} ({item.cnt})</span>
+                  <input type="checkbox" value={item.id} name={item.cateNm} className="checkbox checkbox-secondary" onChange={handleChkBoxCateChange} />
 
+
+
+                  <span className="label-text">{item.cateNm} ({item.cnt})</span>
                 </label>
               </div>
             ))}
@@ -228,7 +274,7 @@ const page = () => {
             {Origin.map((item) => (
               <div className="form-control mb-2">
                 <label className="flex justify-start items-center space-x-5 select-none cursor-pointer">
-                  <input type="checkbox" className="checkbox" />
+                  <input type="checkbox" value={item.id} name={item.originNm} className="checkbox checkbox-secondary" onChange={handleChkBoxOriginChange} />
                   <span className="label-text">{item.originNm} ({item.cnt})</span>
                 </label>
               </div>
@@ -242,7 +288,7 @@ const page = () => {
             {brandNmList.map((item) => (
               <div className="form-control mb-2">
                 <label className="flex justify-start items-center space-x-5 select-none cursor-pointer">
-                  <input type="checkbox" className="checkbox" />
+                  <input type="checkbox" value={item.id} name={item.brandNm} className="checkbox checkbox-secondary" onChange={handleChkBoxBrandChange} />
                   <span className="label-text">{item.brandNm} ({item.cnt})</span>
                 </label>
               </div>
@@ -262,14 +308,34 @@ const page = () => {
         </div>
       </div>
 
-      <div className='pageChild pt-10 pb-10 h-fit'>
-        <div className='flex w-full h- pt-10 pb-10 mb-10
+      <div className='pageChild h-fit mt-10'>
+        <div className='flex w-full h-full 
                       xl:pl-[15%] xl:pr-[15%] '>
-          <div className='flex-grow w-full h-full bg-white'>
+          <div className='flex-grow w-full h-full'>
 
             {/* sort */}
-            <div className='flex w-full h-12 justify-end'>
-              <div className='flex w-48 h-full pl-10 pr-10  justify-center items-center cursor-pointer select-none
+            <div className={`flex w-full h-12 ${isSearchOpt ? `justify-between` : `justify-end`}`}>
+
+              {isSearchOpt && <div className='flex w-full h-full left-0 space-x-5 items-center bg-green-300'>
+                {searchCate.map((item) => (
+                  <div className='flex w-fit h-fit px-3 py-1 items-center bg-pink-200 rounded-full'>
+                    {item.title}
+                  </div>
+                ))}
+
+                {searchBrand.map((item) => (
+                  <div className='flex w-fit h-fit px-3 py-1 items-center bg-yellow-200 rounded-full'>
+                    {item.title}
+                  </div>
+                ))}
+
+                {searchOrigin.map((item) => (
+                  <div className='flex w-fit h-fit px-3 py-1 items-center bg-green-200 rounded-full'>
+                    {item.title}
+                  </div>
+                ))}
+              </div>}
+              <div className='flex w-48 h-full pl-10 pr-10 justify-center items-center cursor-pointer select-none
                                 border-2 border-gray-200  hover:border-gray-400 hover:bg-gray-300'
                 onClick={() => setOpenSort(!isOpenSort)}>
                 Sắp xếp theo ↓
@@ -290,10 +356,9 @@ const page = () => {
             {/* sort */}
 
 
-            <div className='flex-grow  w-full h-full bg-white'>
+            <div className='flex-grow  w-full h-full bg-white mt-10'>
               <div className='grid grid-cols-5 gap-6 w-full h-full'>
                 {currentItems.map((item) => (
-
 
                   <div key={item.id} className='flex-grow h-96 '>
                     <div className='relative'>
@@ -303,11 +368,12 @@ const page = () => {
                     </div>
                     <div className='h-4/5 w-full overflow-hidden'>
                       <img src={item.img} className='h-full w-full hover:scale-110 transition duration-500 ease-in-out' />
-                      <div className='relative'>
-                        <button className='absolute btn w-12 p-2 bg-pink-200 bottom-0 right-0 mr-12 border-none rounded-full'>
+                      <div className='flex relative '>
+                        <button className='absolute btn w-12 p-2 bg-pink-200 bottom-0 right-0 mr-12 border-none rounded-full'
+                          onClick={() => setCartItems([...cartItems, { id: item.id, prodNm: item.prodNm }])}>
                           <CartIc />
                         </button>
-                        <button className='absolute btn w-12 p-2 bg-pink-400 bottom-0 right-0  border-none rounded-full'>
+                        <button className='absolute btn w-12 p-2 bg-pink-400 bottom-0 right-0 border-none rounded-full'>
                           <BuyIc />
                         </button>
                       </div>
@@ -317,8 +383,8 @@ const page = () => {
                         {item.prodNm}
                       </div>
                       <div className='flex h-1/3 w-full items-center pb-5'>
-                        <span className='text-pink-600 text-xl'>{item.price}đ </span>
-                        <span className='line-through'>{item.sellPrice}đ</span>
+                        <span className='text-pink-600 text-xl'>{item.price}đ</span>
+                        <span className='line-through ml-2'> {item.sellPrice}đ</span>
                       </div>
                     </div>
 
@@ -354,10 +420,6 @@ const page = () => {
         </div>
       </div>
       {/* Products */}
-
-
-
-
 
 
 
