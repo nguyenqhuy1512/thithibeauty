@@ -35,7 +35,7 @@ body {
 
   /* all content in web */
   .txtSzBase {
-    @apply xs:text-sm md:text-base lg:text-xl font-Lora
+    @apply xs:text-sm md:text-base lg:text-lg font-Lora
   }
 
   /* all content in web */
@@ -112,6 +112,20 @@ body {
   /* footer */
 
 
+  /* product */
+  /* guide search */
+  .search-part{
+    @apply flex-grow h-fit w-full mb-8 mt-8 space-y-2
+  }
+  .search-part-title{
+    @apply flex justify-start items-start txtSzBase
+  }
+  .search-part-content{
+    @apply block w-full justify-start items-start
+  }
+  .search-part-item{
+    @apply w-fit h-fit border-2 px-2 border-gray-300 rounded-md m-1
+  }
 
 }
 
